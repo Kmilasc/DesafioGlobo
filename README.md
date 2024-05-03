@@ -69,7 +69,7 @@ O agendador do Salesforce foi configurado para executar a classe "DeletarOrdersA
 
 ## Dificuldades
 
-Criei o arquivo package.xml, mas não consegui carregar o package.xml em minha org, mas irei passar o arquivo.
+Criei o arquivo package.xml, mas não consegui carregar o package.xml em minha org, mas foi passado o arquivo.
 
 ## Usuário para o avaliador Globo:
 
