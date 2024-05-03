@@ -1,0 +1,6 @@
+<template>
+    <lightning-card title="Configuração de Envio de Email">
+        <lightning-input label="Endereço de Email" type="email" value={enderecoEmail} onchange={handleEmailChange}></lightning-input>
+        <lightning-checkbox label="Enviar Email" checked={enviarEmail} onchange={handleEnviarEmailChange}></lightning-checkbox>
+    </lightning-card>
+</template>
