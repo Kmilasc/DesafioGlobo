@@ -1,0 +1,1699 @@
+
+<!-- saved from url=(0082)https://packagebuilder.herokuapp.com/package/1ddc3aa4-2b6c-4247-85f2-2bc0e4bdc3ff/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Package.xml</title>
+	</head>
+	
+	<body>
+		<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Package xmlns="http://soap.sforce.com/2006/04/metadata"&gt;
+  &lt;types&gt;
+    &lt;members&gt;AccountService&lt;/members&gt;
+    &lt;members&gt;AccountUpsertService&lt;/members&gt;
+    &lt;members&gt;AgendadorDeletarOrdersAntigas&lt;/members&gt;
+    &lt;members&gt;CustomOrder&lt;/members&gt;
+    &lt;members&gt;DeletarOrdersAntigas&lt;/members&gt;
+    &lt;name&gt;ApexClass&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;apexEmailNotifications&lt;/members&gt;
+    &lt;name&gt;ApexEmailNotifications&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;AppSwitcher&lt;/members&gt;
+    &lt;members&gt;Salesforce1&lt;/members&gt;
+    &lt;name&gt;AppMenu&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;default_appointment_scheduling_policy&lt;/members&gt;
+    &lt;name&gt;AppointmentSchedulingPolicy&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Case.Standard&lt;/members&gt;
+    &lt;members&gt;Lead.Standard&lt;/members&gt;
+    &lt;name&gt;AssignmentRule&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Case&lt;/members&gt;
+    &lt;members&gt;Lead&lt;/members&gt;
+    &lt;name&gt;AssignmentRules&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Case&lt;/members&gt;
+    &lt;members&gt;Lead&lt;/members&gt;
+    &lt;name&gt;AutoResponseRules&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;DataCloudGeoLocation&lt;/members&gt;
+    &lt;name&gt;CleanDataService&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Internal Zone&lt;/members&gt;
+    &lt;name&gt;Community&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;standard__AllTabSet&lt;/members&gt;
+    &lt;members&gt;standard__AppLauncher&lt;/members&gt;
+    &lt;members&gt;standard__Chatter&lt;/members&gt;
+    &lt;members&gt;standard__Commerce&lt;/members&gt;
+    &lt;members&gt;standard__Community&lt;/members&gt;
+    &lt;members&gt;standard__Content&lt;/members&gt;
+    &lt;members&gt;standard__DataManager&lt;/members&gt;
+    &lt;members&gt;standard__Insights&lt;/members&gt;
+    &lt;members&gt;standard__LightningBolt&lt;/members&gt;
+    &lt;members&gt;standard__LightningInstrumentation&lt;/members&gt;
+    &lt;members&gt;standard__LightningSales&lt;/members&gt;
+    &lt;members&gt;standard__LightningSalesConsole&lt;/members&gt;
+    &lt;members&gt;standard__LightningScheduler&lt;/members&gt;
+    &lt;members&gt;standard__LightningService&lt;/members&gt;
+    &lt;members&gt;standard__Marketing&lt;/members&gt;
+    &lt;members&gt;standard__Platform&lt;/members&gt;
+    &lt;members&gt;standard__QueueManagement&lt;/members&gt;
+    &lt;members&gt;standard__RevenueCloudConsole&lt;/members&gt;
+    &lt;members&gt;standard__Sales&lt;/members&gt;
+    &lt;members&gt;standard__SalesforceCMS&lt;/members&gt;
+    &lt;members&gt;standard__Service&lt;/members&gt;
+    &lt;members&gt;standard__ServiceConsole&lt;/members&gt;
+    &lt;members&gt;standard__Sites&lt;/members&gt;
+    &lt;name&gt;CustomApplication&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account.Active__c&lt;/members&gt;
+    &lt;members&gt;Account.CustomerPriority__c&lt;/members&gt;
+    &lt;members&gt;Account.E_mail__c&lt;/members&gt;
+    &lt;members&gt;Account.NumberofLocations__c&lt;/members&gt;
+    &lt;members&gt;Account.Pais__c&lt;/members&gt;
+    &lt;members&gt;Account.Relaciomaneto_pais_conta__c&lt;/members&gt;
+    &lt;members&gt;Account.resumo_das_informa_es_do_pa_s__c&lt;/members&gt;
+    &lt;members&gt;Account.SLA__c&lt;/members&gt;
+    &lt;members&gt;Account.SLAExpirationDate__c&lt;/members&gt;
+    &lt;members&gt;Account.SLASerialNumber__c&lt;/members&gt;
+    &lt;members&gt;Account.UpsellOpportunity__c&lt;/members&gt;
+    &lt;members&gt;Account.valor_total_de_venda__c&lt;/members&gt;
+    &lt;members&gt;Account.Valor_Total_de_Vendas__c&lt;/members&gt;
+    &lt;members&gt;Case.EngineeringReqNumber__c&lt;/members&gt;
+    &lt;members&gt;Case.PotentialLiability__c&lt;/members&gt;
+    &lt;members&gt;Case.Product__c&lt;/members&gt;
+    &lt;members&gt;Case.SLAViolation__c&lt;/members&gt;
+    &lt;members&gt;ConfiguracaoEmailNotificacao__mdt.Endere_o_de_e_mail__c&lt;/members&gt;
+    &lt;members&gt;Contact.Languages__c&lt;/members&gt;
+    &lt;members&gt;Contact.Level__c&lt;/members&gt;
+    &lt;members&gt;Goal.OrigGoalId__c&lt;/members&gt;
+    &lt;members&gt;Lead.CurrentGenerators__c&lt;/members&gt;
+    &lt;members&gt;Lead.NumberofLocations__c&lt;/members&gt;
+    &lt;members&gt;Lead.Primary__c&lt;/members&gt;
+    &lt;members&gt;Lead.ProductInterest__c&lt;/members&gt;
+    &lt;members&gt;Lead.SICCode__c&lt;/members&gt;
+    &lt;members&gt;Metric.OrigMetricId__c&lt;/members&gt;
+    &lt;members&gt;Opportunity.CurrentGenerators__c&lt;/members&gt;
+    &lt;members&gt;Opportunity.DeliveryInstallationStatus__c&lt;/members&gt;
+    &lt;members&gt;Opportunity.MainCompetitors__c&lt;/members&gt;
+    &lt;members&gt;Opportunity.OrderNumber__c&lt;/members&gt;
+    &lt;members&gt;Opportunity.Relaciomaneto_oportunidade_conta__c&lt;/members&gt;
+    &lt;members&gt;Opportunity.TrackingNumber__c&lt;/members&gt;
+    &lt;members&gt;Opportunity.Valor_Total_de_Vendas_da_Conta__c&lt;/members&gt;
+    &lt;members&gt;Order.Customer__c&lt;/members&gt;
+    &lt;members&gt;Pais__c.Idioma__c&lt;/members&gt;
+    &lt;members&gt;Pais__c.Moeda__c&lt;/members&gt;
+    &lt;members&gt;Pais__c.Sigla__c&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c.Cliente__c&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c.Conta__c&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c.Data__c&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c.Valor_do_pedido__c&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c.Valor_total__c&lt;/members&gt;
+    &lt;name&gt;CustomField&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;CustomLabels&lt;/members&gt;
+    &lt;name&gt;CustomLabels&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;enablement_coaching_feedback_ready&lt;/members&gt;
+    &lt;name&gt;CustomNotificationType&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account&lt;/members&gt;
+    &lt;members&gt;AccountCleanInfo&lt;/members&gt;
+    &lt;members&gt;AccountContactRole&lt;/members&gt;
+    &lt;members&gt;Activity&lt;/members&gt;
+    &lt;members&gt;Address&lt;/members&gt;
+    &lt;members&gt;AlternativePaymentMethod&lt;/members&gt;
+    &lt;members&gt;ApiAnomalyEventStore&lt;/members&gt;
+    &lt;members&gt;AppointmentCategory&lt;/members&gt;
+    &lt;members&gt;AppointmentInvitation&lt;/members&gt;
+    &lt;members&gt;AppointmentInvitee&lt;/members&gt;
+    &lt;members&gt;AppointmentScheduleLog&lt;/members&gt;
+    &lt;members&gt;AppointmentTopicTimeSlot&lt;/members&gt;
+    &lt;members&gt;Asset&lt;/members&gt;
+    &lt;members&gt;AssetAction&lt;/members&gt;
+    &lt;members&gt;AssetActionSource&lt;/members&gt;
+    &lt;members&gt;AssetRelationship&lt;/members&gt;
+    &lt;members&gt;AssetStatePeriod&lt;/members&gt;
+    &lt;members&gt;AssignedResource&lt;/members&gt;
+    &lt;members&gt;AssistantProgress&lt;/members&gt;
+    &lt;members&gt;AssociatedLocation&lt;/members&gt;
+    &lt;members&gt;AuthorizationForm&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormConsent&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormDataUse&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormText&lt;/members&gt;
+    &lt;members&gt;BusinessBrand&lt;/members&gt;
+    &lt;members&gt;BuyerGroup&lt;/members&gt;
+    &lt;members&gt;Campaign&lt;/members&gt;
+    &lt;members&gt;CampaignMember&lt;/members&gt;
+    &lt;members&gt;CardPaymentMethod&lt;/members&gt;
+    &lt;members&gt;CartCheckoutSession&lt;/members&gt;
+    &lt;members&gt;CartDeliveryGroup&lt;/members&gt;
+    &lt;members&gt;CartDeliveryGroupMethod&lt;/members&gt;
+    &lt;members&gt;CartItem&lt;/members&gt;
+    &lt;members&gt;CartItemPriceAdjustment&lt;/members&gt;
+    &lt;members&gt;CartRelatedItem&lt;/members&gt;
+    &lt;members&gt;CartTax&lt;/members&gt;
+    &lt;members&gt;CartValidationOutput&lt;/members&gt;
+    &lt;members&gt;Case&lt;/members&gt;
+    &lt;members&gt;CaseContactRole&lt;/members&gt;
+    &lt;members&gt;CaseMilestone&lt;/members&gt;
+    &lt;members&gt;CaseRelatedIssue&lt;/members&gt;
+    &lt;members&gt;ChangeRequest&lt;/members&gt;
+    &lt;members&gt;ChangeRequestRelatedIssue&lt;/members&gt;
+    &lt;members&gt;ChangeRequestRelatedItem&lt;/members&gt;
+    &lt;members&gt;ChatterActivity&lt;/members&gt;
+    &lt;members&gt;CollaborationGroup&lt;/members&gt;
+    &lt;members&gt;CollaborationGroupMember&lt;/members&gt;
+    &lt;members&gt;CommSubscription&lt;/members&gt;
+    &lt;members&gt;CommSubscriptionChannelType&lt;/members&gt;
+    &lt;members&gt;CommSubscriptionConsent&lt;/members&gt;
+    &lt;members&gt;CommSubscriptionTiming&lt;/members&gt;
+    &lt;members&gt;ConfiguracaoEmailNotificacao__mdt&lt;/members&gt;
+    &lt;members&gt;ConsumptionRate&lt;/members&gt;
+    &lt;members&gt;ConsumptionSchedule&lt;/members&gt;
+    &lt;members&gt;Contact&lt;/members&gt;
+    &lt;members&gt;ContactCleanInfo&lt;/members&gt;
+    &lt;members&gt;ContactPointAddress&lt;/members&gt;
+    &lt;members&gt;ContactPointConsent&lt;/members&gt;
+    &lt;members&gt;ContactPointEmail&lt;/members&gt;
+    &lt;members&gt;ContactPointPhone&lt;/members&gt;
+    &lt;members&gt;ContactPointTypeConsent&lt;/members&gt;
+    &lt;members&gt;ContactRequest&lt;/members&gt;
+    &lt;members&gt;ContentVersion&lt;/members&gt;
+    &lt;members&gt;Contract&lt;/members&gt;
+    &lt;members&gt;ContractContactRole&lt;/members&gt;
+    &lt;members&gt;ContractLineItem&lt;/members&gt;
+    &lt;members&gt;Coupon&lt;/members&gt;
+    &lt;members&gt;CouponCodeRedemption&lt;/members&gt;
+    &lt;members&gt;CredentialStuffingEventStore&lt;/members&gt;
+    &lt;members&gt;CreditMemo&lt;/members&gt;
+    &lt;members&gt;CreditMemoInvApplication&lt;/members&gt;
+    &lt;members&gt;CreditMemoLine&lt;/members&gt;
+    &lt;members&gt;Customer&lt;/members&gt;
+    &lt;members&gt;DandBCompany&lt;/members&gt;
+    &lt;members&gt;DataUseLegalBasis&lt;/members&gt;
+    &lt;members&gt;DataUsePurpose&lt;/members&gt;
+    &lt;members&gt;DigitalWallet&lt;/members&gt;
+    &lt;members&gt;DuplicateRecordItem&lt;/members&gt;
+    &lt;members&gt;DuplicateRecordSet&lt;/members&gt;
+    &lt;members&gt;EmailMessage&lt;/members&gt;
+    &lt;members&gt;EngagementChannelType&lt;/members&gt;
+    &lt;members&gt;EngagementChannelWorkType&lt;/members&gt;
+    &lt;members&gt;Entitlement&lt;/members&gt;
+    &lt;members&gt;EntitlementContact&lt;/members&gt;
+    &lt;members&gt;EntityMilestone&lt;/members&gt;
+    &lt;members&gt;Event&lt;/members&gt;
+    &lt;members&gt;ExchangeUserMapping&lt;/members&gt;
+    &lt;members&gt;ExpressionFilter&lt;/members&gt;
+    &lt;members&gt;ExpressionFilterCriteria&lt;/members&gt;
+    &lt;members&gt;ExternalEventMapping&lt;/members&gt;
+    &lt;members&gt;FeedItem&lt;/members&gt;
+    &lt;members&gt;FinanceBalanceSnapshot&lt;/members&gt;
+    &lt;members&gt;FinanceTransaction&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationInstance&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationStageInstance&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationStepInstance&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationWorkItem&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrder&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrderItemAdjustment&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrderItemTax&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrderLineItem&lt;/members&gt;
+    &lt;members&gt;GuestUserAnomalyEventStore&lt;/members&gt;
+    &lt;members&gt;Idea&lt;/members&gt;
+    &lt;members&gt;Image&lt;/members&gt;
+    &lt;members&gt;Incident&lt;/members&gt;
+    &lt;members&gt;IncidentRelatedItem&lt;/members&gt;
+    &lt;members&gt;Individual&lt;/members&gt;
+    &lt;members&gt;InventoryItemReservation&lt;/members&gt;
+    &lt;members&gt;InventoryReservation&lt;/members&gt;
+    &lt;members&gt;Invoice&lt;/members&gt;
+    &lt;members&gt;InvoiceLine&lt;/members&gt;
+    &lt;members&gt;Lead&lt;/members&gt;
+    &lt;members&gt;LeadCleanInfo&lt;/members&gt;
+    &lt;members&gt;LearningAssignment&lt;/members&gt;
+    &lt;members&gt;LearningAssignmentProgress&lt;/members&gt;
+    &lt;members&gt;LearningItem&lt;/members&gt;
+    &lt;members&gt;LearningLinkProgress&lt;/members&gt;
+    &lt;members&gt;LegalEntity&lt;/members&gt;
+    &lt;members&gt;Location&lt;/members&gt;
+    &lt;members&gt;LocationGroup&lt;/members&gt;
+    &lt;members&gt;LocationGroupAssignment&lt;/members&gt;
+    &lt;members&gt;Macro&lt;/members&gt;
+    &lt;members&gt;MacroAction&lt;/members&gt;
+    &lt;members&gt;MacroInstruction&lt;/members&gt;
+    &lt;members&gt;MacroUsage&lt;/members&gt;
+    &lt;members&gt;MessagingEndUser&lt;/members&gt;
+    &lt;members&gt;MessagingSession&lt;/members&gt;
+    &lt;members&gt;MLModel&lt;/members&gt;
+    &lt;members&gt;MLModelFactor&lt;/members&gt;
+    &lt;members&gt;MLModelFactorComponent&lt;/members&gt;
+    &lt;members&gt;OperatingHours&lt;/members&gt;
+    &lt;members&gt;OperatingHoursHoliday&lt;/members&gt;
+    &lt;members&gt;Opportunity&lt;/members&gt;
+    &lt;members&gt;OpportunityCompetitor&lt;/members&gt;
+    &lt;members&gt;OpportunityContactRole&lt;/members&gt;
+    &lt;members&gt;OpportunityLineItem&lt;/members&gt;
+    &lt;members&gt;OpportunityRelatedDeleteLog&lt;/members&gt;
+    &lt;members&gt;Order&lt;/members&gt;
+    &lt;members&gt;OrderItem&lt;/members&gt;
+    &lt;members&gt;OrgDeleteRequest&lt;/members&gt;
+    &lt;members&gt;OrgMetricScanResult&lt;/members&gt;
+    &lt;members&gt;OrgMetricScanSummary&lt;/members&gt;
+    &lt;members&gt;Pais__c&lt;/members&gt;
+    &lt;members&gt;PartnerRole&lt;/members&gt;
+    &lt;members&gt;PartyConsent&lt;/members&gt;
+    &lt;members&gt;Payment&lt;/members&gt;
+    &lt;members&gt;PaymentAuthAdjustment&lt;/members&gt;
+    &lt;members&gt;PaymentAuthorization&lt;/members&gt;
+    &lt;members&gt;PaymentGateway&lt;/members&gt;
+    &lt;members&gt;PaymentGroup&lt;/members&gt;
+    &lt;members&gt;PaymentLineInvoice&lt;/members&gt;
+    &lt;members&gt;PaymentMethod&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c&lt;/members&gt;
+    &lt;members&gt;Pricebook2&lt;/members&gt;
+    &lt;members&gt;PricebookEntry&lt;/members&gt;
+    &lt;members&gt;PrivacyJobSession&lt;/members&gt;
+    &lt;members&gt;PrivacyRTBFRequest&lt;/members&gt;
+    &lt;members&gt;Problem&lt;/members&gt;
+    &lt;members&gt;ProblemIncident&lt;/members&gt;
+    &lt;members&gt;ProblemRelatedItem&lt;/members&gt;
+    &lt;members&gt;ProcessException&lt;/members&gt;
+    &lt;members&gt;Product2&lt;/members&gt;
+    &lt;members&gt;ProductAttribute&lt;/members&gt;
+    &lt;members&gt;ProductAttributeSetProduct&lt;/members&gt;
+    &lt;members&gt;ProductCatalog&lt;/members&gt;
+    &lt;members&gt;ProductCategory&lt;/members&gt;
+    &lt;members&gt;ProductCategoryProduct&lt;/members&gt;
+    &lt;members&gt;ProductConsumptionSchedule&lt;/members&gt;
+    &lt;members&gt;Promotion&lt;/members&gt;
+    &lt;members&gt;PromotionLineItemRule&lt;/members&gt;
+    &lt;members&gt;PromotionMarketSegment&lt;/members&gt;
+    &lt;members&gt;PromotionQualifier&lt;/members&gt;
+    &lt;members&gt;PromotionSegment&lt;/members&gt;
+    &lt;members&gt;PromotionSegmentBuyerGroup&lt;/members&gt;
+    &lt;members&gt;PromotionSegmentSalesStore&lt;/members&gt;
+    &lt;members&gt;PromotionTarget&lt;/members&gt;
+    &lt;members&gt;PromotionTier&lt;/members&gt;
+    &lt;members&gt;PromptAction&lt;/members&gt;
+    &lt;members&gt;PromptError&lt;/members&gt;
+    &lt;members&gt;QuickText&lt;/members&gt;
+    &lt;members&gt;QuickTextUsage&lt;/members&gt;
+    &lt;members&gt;Recommendation&lt;/members&gt;
+    &lt;members&gt;RecordAction&lt;/members&gt;
+    &lt;members&gt;RecordMergeHistory&lt;/members&gt;
+    &lt;members&gt;Refund&lt;/members&gt;
+    &lt;members&gt;RefundLinePayment&lt;/members&gt;
+    &lt;members&gt;ReportAnomalyEventStore&lt;/members&gt;
+    &lt;members&gt;ResourceAbsence&lt;/members&gt;
+    &lt;members&gt;ResourcePreference&lt;/members&gt;
+    &lt;members&gt;ReturnOrder&lt;/members&gt;
+    &lt;members&gt;ReturnOrderItemAdjustment&lt;/members&gt;
+    &lt;members&gt;ReturnOrderItemTax&lt;/members&gt;
+    &lt;members&gt;ReturnOrderLineItem&lt;/members&gt;
+    &lt;members&gt;SalesStore&lt;/members&gt;
+    &lt;members&gt;Scorecard&lt;/members&gt;
+    &lt;members&gt;ScorecardAssociation&lt;/members&gt;
+    &lt;members&gt;ScorecardMetric&lt;/members&gt;
+    &lt;members&gt;Seller&lt;/members&gt;
+    &lt;members&gt;ServiceAppointment&lt;/members&gt;
+    &lt;members&gt;ServiceAppointmentAttendee&lt;/members&gt;
+    &lt;members&gt;ServiceContract&lt;/members&gt;
+    &lt;members&gt;ServiceResource&lt;/members&gt;
+    &lt;members&gt;ServiceResourceSkill&lt;/members&gt;
+    &lt;members&gt;ServiceTerritory&lt;/members&gt;
+    &lt;members&gt;ServiceTerritoryMember&lt;/members&gt;
+    &lt;members&gt;ServiceTerritoryWorkType&lt;/members&gt;
+    &lt;members&gt;SessionHijackingEventStore&lt;/members&gt;
+    &lt;members&gt;Shift&lt;/members&gt;
+    &lt;members&gt;ShiftEngagementChannel&lt;/members&gt;
+    &lt;members&gt;ShiftWorkTopic&lt;/members&gt;
+    &lt;members&gt;Shipment&lt;/members&gt;
+    &lt;members&gt;ShipmentItem&lt;/members&gt;
+    &lt;members&gt;ShippingConfigurationSet&lt;/members&gt;
+    &lt;members&gt;ShippingRateArea&lt;/members&gt;
+    &lt;members&gt;ShippingRateGroup&lt;/members&gt;
+    &lt;members&gt;Site&lt;/members&gt;
+    &lt;members&gt;SkillRequirement&lt;/members&gt;
+    &lt;members&gt;SocialPersona&lt;/members&gt;
+    &lt;members&gt;Solution&lt;/members&gt;
+    &lt;members&gt;StandardShippingRate&lt;/members&gt;
+    &lt;members&gt;StreamActivityAccess&lt;/members&gt;
+    &lt;members&gt;StreamingChannel&lt;/members&gt;
+    &lt;members&gt;TableauHostMapping&lt;/members&gt;
+    &lt;members&gt;Task&lt;/members&gt;
+    &lt;members&gt;TimeSlot&lt;/members&gt;
+    &lt;members&gt;Topic&lt;/members&gt;
+    &lt;members&gt;TopicAssignment&lt;/members&gt;
+    &lt;members&gt;User&lt;/members&gt;
+    &lt;members&gt;UserExternalCredential&lt;/members&gt;
+    &lt;members&gt;UserPrioritizedRecord&lt;/members&gt;
+    &lt;members&gt;UserProvisioningRequest&lt;/members&gt;
+    &lt;members&gt;VoiceCall&lt;/members&gt;
+    &lt;members&gt;Waitlist&lt;/members&gt;
+    &lt;members&gt;WaitlistParticipant&lt;/members&gt;
+    &lt;members&gt;WaitlistServiceResource&lt;/members&gt;
+    &lt;members&gt;WaitlistWorkType&lt;/members&gt;
+    &lt;members&gt;WebCart&lt;/members&gt;
+    &lt;members&gt;WebCartAdjustmentBasis&lt;/members&gt;
+    &lt;members&gt;WebCartAdjustmentGroup&lt;/members&gt;
+    &lt;members&gt;WebStore&lt;/members&gt;
+    &lt;members&gt;WebStoreBuyerGroup&lt;/members&gt;
+    &lt;members&gt;WebStoreCatalog&lt;/members&gt;
+    &lt;members&gt;WebStoreInventorySource&lt;/members&gt;
+    &lt;members&gt;WorkOrder&lt;/members&gt;
+    &lt;members&gt;WorkOrderLineItem&lt;/members&gt;
+    &lt;members&gt;WorkPlan&lt;/members&gt;
+    &lt;members&gt;WorkPlanTemplate&lt;/members&gt;
+    &lt;members&gt;WorkPlanTemplateEntry&lt;/members&gt;
+    &lt;members&gt;WorkStep&lt;/members&gt;
+    &lt;members&gt;WorkStepTemplate&lt;/members&gt;
+    &lt;members&gt;WorkType&lt;/members&gt;
+    &lt;members&gt;WorkTypeGroup&lt;/members&gt;
+    &lt;members&gt;WorkTypeGroupMember&lt;/members&gt;
+    &lt;name&gt;CustomObject&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;ConfiguracaoEmailNotificacao__mdt-pt_BR&lt;/members&gt;
+    &lt;members&gt;Pais__c-pt_BR&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c-pt_BR&lt;/members&gt;
+    &lt;name&gt;CustomObjectTranslation&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Pais__c&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c&lt;/members&gt;
+    &lt;name&gt;CustomTab&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Enablement_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;Enablement_sfdcSESv60/Program_Dashboard_sfdcSESv60&lt;/members&gt;
+    &lt;name&gt;Dashboard&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account.Standard_Account_Duplicate_Rule&lt;/members&gt;
+    &lt;members&gt;Contact.Standard_Contact_Duplicate_Rule&lt;/members&gt;
+    &lt;members&gt;Lead.Standard_Lead_Duplicate_Rule&lt;/members&gt;
+    &lt;name&gt;DuplicateRule&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;unfiled$public&lt;/members&gt;
+    &lt;members&gt;unfiled$public/CommerceReorderPortalInvitation&lt;/members&gt;
+    &lt;members&gt;unfiled$public/MarketingProductInquiryResponse&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SalesNewCustomerEmail&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SchedulerUnauthenticatedUserAppointmentTypeEmailTemplateForAmazonChime&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SchedulerUnauthenticatedUserAppointmentTypeEmailTemplateForThirdParty&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SchedulerUnauthenticatedUserEngagementChannelEmailTemplateForAmazonChime&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SchedulerUnauthenticatedUserEngagementChannelEmailTemplateForThirdParty&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SupportCaseAssignmentNotification&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SupportCaseCreatedPhoneInquiries&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SupportCaseCreatedWebInquiries&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SupportCaseResponse&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SupportEscalatedCaseNotification&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SupportEscalatedCaseReassignment&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SupportSelfServiceNewLoginandPassword&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SupportSelfServiceResetPassword&lt;/members&gt;
+    &lt;members&gt;unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE&lt;/members&gt;
+    &lt;name&gt;EmailTemplate&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;caso padr&amp;#227;o&lt;/members&gt;
+    &lt;name&gt;EntitlementProcess&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Case.Standard&lt;/members&gt;
+    &lt;name&gt;EscalationRule&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Case&lt;/members&gt;
+    &lt;name&gt;EscalationRules&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;ContactCenter_UtilityBar&lt;/members&gt;
+    &lt;members&gt;CrisisCenter_UtilityBar&lt;/members&gt;
+    &lt;members&gt;LightningSalesConsole_UtilityBar&lt;/members&gt;
+    &lt;members&gt;LightningSales_UtilityBar&lt;/members&gt;
+    &lt;members&gt;LightningService_UtilityBar&lt;/members&gt;
+    &lt;members&gt;RevenueCloudConsole_UtilityBar&lt;/members&gt;
+    &lt;name&gt;FlexiPage&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Atualizar_Valor_Total_de_Vendas_da_Conta&lt;/members&gt;
+    &lt;members&gt;Fluxo_de_Envio_de_Email_de_Notifica_o_de_Conta&lt;/members&gt;
+    &lt;name&gt;Flow&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Atualizar_Valor_Total_de_Vendas_da_Conta&lt;/members&gt;
+    &lt;members&gt;Fluxo_de_Envio_de_Email_de_Notifica_o_de_Conta&lt;/members&gt;
+    &lt;name&gt;FlowDefinition&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;DE Default&lt;/members&gt;
+    &lt;name&gt;HomePageLayout&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;IframeWhiteListUrlSettings&lt;/members&gt;
+    &lt;name&gt;IframeWhiteListUrlSettings&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account-Account %28Marketing%29 Layout&lt;/members&gt;
+    &lt;members&gt;Account-Account %28Sales%29 Layout&lt;/members&gt;
+    &lt;members&gt;Account-Account %28Support%29 Layout&lt;/members&gt;
+    &lt;members&gt;Account-Account Layout&lt;/members&gt;
+    &lt;members&gt;AlternativePaymentMethod-Alternative Payment Method Layout&lt;/members&gt;
+    &lt;members&gt;ApiAnomalyEventStore-API Anomaly Event Store Layout&lt;/members&gt;
+    &lt;members&gt;AppointmentInvitation-Appointment Invitation Layout&lt;/members&gt;
+    &lt;members&gt;AssetAction-Asset Action Layout&lt;/members&gt;
+    &lt;members&gt;AssetActionSource-Asset Action Source Layout&lt;/members&gt;
+    &lt;members&gt;Asset-Asset Layout&lt;/members&gt;
+    &lt;members&gt;AssetRelationship-Asset Relationship Layout&lt;/members&gt;
+    &lt;members&gt;AssetStatePeriod-Asset State Period Layout&lt;/members&gt;
+    &lt;members&gt;AssignedResource-Assigned Resource Layout&lt;/members&gt;
+    &lt;members&gt;AssociatedLocation-Associated Location Layout&lt;/members&gt;
+    &lt;members&gt;AsyncOperationLog-Async Operation Log Layout&lt;/members&gt;
+    &lt;members&gt;AuthorizationForm-Authorization Form Layout&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormConsent-Authorization Form Consent Layout&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormDataUse-Authorization Form Data Use Layout&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormText-Authorization Form Text Layout&lt;/members&gt;
+    &lt;members&gt;BusinessBrand-Business Brand Layout&lt;/members&gt;
+    &lt;members&gt;Campaign-Campaign Layout&lt;/members&gt;
+    &lt;members&gt;CampaignMember-Campaign Member Page Layout&lt;/members&gt;
+    &lt;members&gt;CardPaymentMethod-Card Payment Method Layout&lt;/members&gt;
+    &lt;members&gt;CartCheckoutSession-Cart Checkout Session Layout&lt;/members&gt;
+    &lt;members&gt;CartDeliveryGroup-Cart Delivery Group Layout&lt;/members&gt;
+    &lt;members&gt;CartDeliveryGroupMethod-Cart Delivery Group Method Layout&lt;/members&gt;
+    &lt;members&gt;CartItem-Cart Item Layout&lt;/members&gt;
+    &lt;members&gt;CartTax-Cart Tax Layout&lt;/members&gt;
+    &lt;members&gt;CartValidationOutput-Cart Validation Output Layout&lt;/members&gt;
+    &lt;members&gt;Case-Case %28Marketing%29 Layout&lt;/members&gt;
+    &lt;members&gt;Case-Case %28Sales%29 Layout&lt;/members&gt;
+    &lt;members&gt;Case-Case %28Support%29 Layout&lt;/members&gt;
+    &lt;members&gt;Case-Case Layout&lt;/members&gt;
+    &lt;members&gt;CaseClose-Close Case Layout&lt;/members&gt;
+    &lt;members&gt;CaseMilestone-Layout de marcos de casos&lt;/members&gt;
+    &lt;members&gt;CommunityMemberLayout-Community Member Layout&lt;/members&gt;
+    &lt;members&gt;ConfiguracaoEmailNotificacao__mdt-Layout de ConfiguracaoEmailNotificacao&lt;/members&gt;
+    &lt;members&gt;ConsumptionRate-Consumption Rate Layout&lt;/members&gt;
+    &lt;members&gt;ConsumptionSchedule-Consumption Schedule Layout&lt;/members&gt;
+    &lt;members&gt;Contact-Contact %28Marketing%29 Layout&lt;/members&gt;
+    &lt;members&gt;Contact-Contact %28Sales%29 Layout&lt;/members&gt;
+    &lt;members&gt;Contact-Contact %28Support%29 Layout&lt;/members&gt;
+    &lt;members&gt;Contact-Contact Layout&lt;/members&gt;
+    &lt;members&gt;ContactPointAddress-Contact Point Address Layout&lt;/members&gt;
+    &lt;members&gt;ContactPointEmail-Contact Point Email Layout&lt;/members&gt;
+    &lt;members&gt;ContactPointPhone-Contact Point Phone Layout&lt;/members&gt;
+    &lt;members&gt;ContactPointTypeConsent-Contact Point Type Consent Layout&lt;/members&gt;
+    &lt;members&gt;ContentVersion-Content Version Layout&lt;/members&gt;
+    &lt;members&gt;Contract-Contract Layout&lt;/members&gt;
+    &lt;members&gt;ContractLineItem-Layout de itens de linha do contrato&lt;/members&gt;
+    &lt;members&gt;CredentialStuffingEventStore-Credential Stuffing Event Store Layout&lt;/members&gt;
+    &lt;members&gt;CreditMemo-Credit Memo Layout&lt;/members&gt;
+    &lt;members&gt;CreditMemoInvApplication-Credit Memo Invoice Application Layout&lt;/members&gt;
+    &lt;members&gt;CreditMemoLine-Credit Memo Line Layout&lt;/members&gt;
+    &lt;members&gt;CspTrustedSite-Layout de URL confi&amp;#225;vel&lt;/members&gt;
+    &lt;members&gt;Customer-Customer Layout&lt;/members&gt;
+    &lt;members&gt;DandBCompany-D%26B Company Layout&lt;/members&gt;
+    &lt;members&gt;DataUseLegalBasis-Data Use Legal Basis Layout&lt;/members&gt;
+    &lt;members&gt;DataUsePurpose-Data Use Purpose Layout&lt;/members&gt;
+    &lt;members&gt;DigitalWallet-Digital Wallet Layout&lt;/members&gt;
+    &lt;members&gt;DuplicateRecordSet-Duplicate Record Set Layout&lt;/members&gt;
+    &lt;members&gt;EmailMessage-Email Message Layout&lt;/members&gt;
+    &lt;members&gt;EngagementChannelType-Engagement Channel Type Layout&lt;/members&gt;
+    &lt;members&gt;Entitlement-Direito Layout&lt;/members&gt;
+    &lt;members&gt;EntityMilestone-Layout de marcos de objeto&lt;/members&gt;
+    &lt;members&gt;Event-Event Layout&lt;/members&gt;
+    &lt;members&gt;FeedItem-Feed Item Layout&lt;/members&gt;
+    &lt;members&gt;FinanceBalanceSnapshot-Finance Balance Snapshot Layout&lt;/members&gt;
+    &lt;members&gt;FinanceTransaction-Finance Transaction Layout&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrder-Fulfillment Order Layout&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrderItemAdjustment-Fulfillment Order Item Adjustment Layout&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrderItemTax-Fulfillment Order Item Tax Layout&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrderLineItem-Fulfillment Order Product Layout&lt;/members&gt;
+    &lt;members&gt;Global-Global Layout&lt;/members&gt;
+    &lt;members&gt;GuestUserAnomalyEventStore-Guest User Anomaly Event Store Layout&lt;/members&gt;
+    &lt;members&gt;Idea-Idea Layout&lt;/members&gt;
+    &lt;members&gt;Individual-Individual Layout&lt;/members&gt;
+    &lt;members&gt;Invoice-Invoice Layout&lt;/members&gt;
+    &lt;members&gt;InvoiceLine-Invoice Line Layout&lt;/members&gt;
+    &lt;members&gt;Lead-Lead %28Marketing%29 Layout&lt;/members&gt;
+    &lt;members&gt;Lead-Lead %28Sales%29 Layout&lt;/members&gt;
+    &lt;members&gt;Lead-Lead %28Support%29 Layout&lt;/members&gt;
+    &lt;members&gt;Lead-Lead Layout&lt;/members&gt;
+    &lt;members&gt;LegalEntity-Legal Entity Layout&lt;/members&gt;
+    &lt;members&gt;LocationGroupAssignment-Location Group Assignment Layout&lt;/members&gt;
+    &lt;members&gt;LocationGroup-Location Group Layout&lt;/members&gt;
+    &lt;members&gt;Location-Location Layout&lt;/members&gt;
+    &lt;members&gt;Macro-Macro Layout&lt;/members&gt;
+    &lt;members&gt;OperatingHours-Operating Hours Layout&lt;/members&gt;
+    &lt;members&gt;OpportunityLineItem-Opportunity Product Layout&lt;/members&gt;
+    &lt;members&gt;Opportunity-Opportunity %28Marketing%29 Layout&lt;/members&gt;
+    &lt;members&gt;Opportunity-Opportunity %28Sales%29 Layout&lt;/members&gt;
+    &lt;members&gt;Opportunity-Opportunity %28Support%29 Layout&lt;/members&gt;
+    &lt;members&gt;Opportunity-Opportunity Layout&lt;/members&gt;
+    &lt;members&gt;OrderItem-Order Product Layout&lt;/members&gt;
+    &lt;members&gt;Order-Order Layout&lt;/members&gt;
+    &lt;members&gt;Pais__c-Layout de Pais&lt;/members&gt;
+    &lt;members&gt;PaymentAuthAdjustment-Payment Authorization Adjustment Layout&lt;/members&gt;
+    &lt;members&gt;PaymentAuthorization-Payment Authorization Layout&lt;/members&gt;
+    &lt;members&gt;PaymentGatewayLog-Payment Gateway Log Layout&lt;/members&gt;
+    &lt;members&gt;PaymentGateway-Payment Gateway Layout&lt;/members&gt;
+    &lt;members&gt;PaymentGroup-Payment Group Layout&lt;/members&gt;
+    &lt;members&gt;PaymentLineInvoice-Payment Line Invoice Layout&lt;/members&gt;
+    &lt;members&gt;Payment-Payment Layout&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c-Layout de Pedido%28C%29&lt;/members&gt;
+    &lt;members&gt;Pricebook2-Price Book Layout&lt;/members&gt;
+    &lt;members&gt;PricebookEntry-Price Book Entry Layout&lt;/members&gt;
+    &lt;members&gt;ProcessException-Process Exception Layout&lt;/members&gt;
+    &lt;members&gt;Product2-Product Layout&lt;/members&gt;
+    &lt;members&gt;ProductConsumptionSchedule-Product Consumption Schedule Layout&lt;/members&gt;
+    &lt;members&gt;QuickText-Quick Text Layout&lt;/members&gt;
+    &lt;members&gt;RefundLinePayment-Refund Line Payment Layout&lt;/members&gt;
+    &lt;members&gt;Refund-Refund Layout&lt;/members&gt;
+    &lt;members&gt;ReportAnomalyEventStore-Report Anomaly Event Store Layout&lt;/members&gt;
+    &lt;members&gt;ResourceAbsence-Resource Absence Layout&lt;/members&gt;
+    &lt;members&gt;ResourcePreference-Resource Preference Layout&lt;/members&gt;
+    &lt;members&gt;ReturnOrderItemAdjustment-Return Order Item Adjustment Layout&lt;/members&gt;
+    &lt;members&gt;ReturnOrderItemTax-Return Order Item Tax Layout&lt;/members&gt;
+    &lt;members&gt;ReturnOrderLineItem-Return Order Line Item Layout&lt;/members&gt;
+    &lt;members&gt;ReturnOrder-Return Order Layout&lt;/members&gt;
+    &lt;members&gt;ScorecardAssociation-Scorecard Association Layout&lt;/members&gt;
+    &lt;members&gt;ScorecardMetric-Scorecard Metric Layout&lt;/members&gt;
+    &lt;members&gt;Scorecard-Scorecard Layout&lt;/members&gt;
+    &lt;members&gt;Seller-Seller Layout&lt;/members&gt;
+    &lt;members&gt;ServiceAppointment-Service Appointment Layout&lt;/members&gt;
+    &lt;members&gt;ServiceContract-Layout do contrato de servi&amp;#231;o&lt;/members&gt;
+    &lt;members&gt;ServiceResource-Service Resource Layout&lt;/members&gt;
+    &lt;members&gt;ServiceResourceSkill-Service Resource Skill Layout&lt;/members&gt;
+    &lt;members&gt;ServiceTerritoryMember-Service Territory Member Layout&lt;/members&gt;
+    &lt;members&gt;ServiceTerritory-Service Territory Layout&lt;/members&gt;
+    &lt;members&gt;SessionHijackingEventStore-Session Hijacking Event Store Layout&lt;/members&gt;
+    &lt;members&gt;Shift-Shift Layout&lt;/members&gt;
+    &lt;members&gt;ShiftWorkTopic-Shift Work Topic Layout&lt;/members&gt;
+    &lt;members&gt;ShippingConfigurationSet-Shipping Configuration Set Layout&lt;/members&gt;
+    &lt;members&gt;ShippingRateArea-Shipping Rate Area Layout&lt;/members&gt;
+    &lt;members&gt;ShippingRateGroup-Shipping Rate Group Layout&lt;/members&gt;
+    &lt;members&gt;SkillRequirement-Skill Requirement Layout&lt;/members&gt;
+    &lt;members&gt;SocialPersona-Social Persona Layout&lt;/members&gt;
+    &lt;members&gt;Solution-Solution Layout&lt;/members&gt;
+    &lt;members&gt;StandardShippingRate-Standard Shipping Rate Layout&lt;/members&gt;
+    &lt;members&gt;Task-Task Layout&lt;/members&gt;
+    &lt;members&gt;ThreatDetectionFeedback-Threat Detection Feedback Layout&lt;/members&gt;
+    &lt;members&gt;TimeSlot-Time Slot Layout&lt;/members&gt;
+    &lt;members&gt;UserProvAccount-User Provisioning Account Layout&lt;/members&gt;
+    &lt;members&gt;UserProvisioningLog-User Provisioning Log Layout&lt;/members&gt;
+    &lt;members&gt;UserProvisioningRequest-User Provisioning Request Layout&lt;/members&gt;
+    &lt;members&gt;User-User Layout&lt;/members&gt;
+    &lt;members&gt;Waitlist-%5F%5FMISSING LABEL%5F%5F PropertyFile - val Waitlist not found in section StandardLayouts&lt;/members&gt;
+    &lt;members&gt;WebCartAdjustmentBasis-Cart Adjustment Basis Layout&lt;/members&gt;
+    &lt;members&gt;WebCartAdjustmentGroup-Cart Adjustment Group Layout&lt;/members&gt;
+    &lt;members&gt;WebCart-Cart Layout&lt;/members&gt;
+    &lt;members&gt;WebStore-Store Layout&lt;/members&gt;
+    &lt;members&gt;WorkOrderLineItem-Work Order Line Item Layout&lt;/members&gt;
+    &lt;members&gt;WorkOrder-Work Order Layout&lt;/members&gt;
+    &lt;members&gt;WorkPlanTemplateEntry-Work Plan Template Entry Layout&lt;/members&gt;
+    &lt;members&gt;WorkPlanTemplate-Work Plan Template Layout&lt;/members&gt;
+    &lt;members&gt;WorkPlan-Work Plan Layout&lt;/members&gt;
+    &lt;members&gt;WorkStepTemplate-Work Step Template Layout&lt;/members&gt;
+    &lt;members&gt;WorkStep-Work Step Layout&lt;/members&gt;
+    &lt;members&gt;WorkTypeGroupMember-Work Type Group Member Layout&lt;/members&gt;
+    &lt;members&gt;WorkTypeGroup-Work Type Group Layout&lt;/members&gt;
+    &lt;members&gt;WorkType-Work Type Layout&lt;/members&gt;
+    &lt;name&gt;Layout&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account.AllAccounts&lt;/members&gt;
+    &lt;members&gt;Account.MyAccounts&lt;/members&gt;
+    &lt;members&gt;Account.NewLastWeek&lt;/members&gt;
+    &lt;members&gt;Account.NewThisWeek&lt;/members&gt;
+    &lt;members&gt;Account.PlatinumandGoldSLACustomers&lt;/members&gt;
+    &lt;members&gt;Activity.AllActivities&lt;/members&gt;
+    &lt;members&gt;Activity.MyActivities&lt;/members&gt;
+    &lt;members&gt;Activity.TodaysTasks&lt;/members&gt;
+    &lt;members&gt;Activity.UpcomingEvents&lt;/members&gt;
+    &lt;members&gt;AlternativePaymentMethod.AlternativePaymentMethod&lt;/members&gt;
+    &lt;members&gt;AppointmentInvitation.All_AppointmentInvitations&lt;/members&gt;
+    &lt;members&gt;AppointmentInvitation.My_AppointmentInvitations&lt;/members&gt;
+    &lt;members&gt;AssetAction.AssetAction&lt;/members&gt;
+    &lt;members&gt;AssetActionSource.AssetActionSource&lt;/members&gt;
+    &lt;members&gt;Asset.AllAssets&lt;/members&gt;
+    &lt;members&gt;AssetStatePeriod.AssetStatePeriod&lt;/members&gt;
+    &lt;members&gt;AuthorizationForm.All_AuthorizationForms&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormConsent.All_AuthorizationFormConsents&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormDataUse.All_AuthorizationFormDataUses&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormText.All_AuthorizationFormText&lt;/members&gt;
+    &lt;members&gt;BusinessBrand.All_BusinessBrands&lt;/members&gt;
+    &lt;members&gt;BuyerGroup.All_Buyer_Groups&lt;/members&gt;
+    &lt;members&gt;BuyerGroup.My_Buyer_Groups&lt;/members&gt;
+    &lt;members&gt;Campaign.AllActiveCampaigns&lt;/members&gt;
+    &lt;members&gt;Campaign.MyActiveCampaigns&lt;/members&gt;
+    &lt;members&gt;CardPaymentMethod.CardPaymentMethod&lt;/members&gt;
+    &lt;members&gt;Case.AllClosedCases&lt;/members&gt;
+    &lt;members&gt;Case.AllOpenCases&lt;/members&gt;
+    &lt;members&gt;Case.MyCases&lt;/members&gt;
+    &lt;members&gt;Case.MyOpenCases&lt;/members&gt;
+    &lt;members&gt;CollaborationGroup.All_ChatterGroups&lt;/members&gt;
+    &lt;members&gt;CommSubscription.All_CommSubscriptions&lt;/members&gt;
+    &lt;members&gt;CommSubscriptionChannelType.All_CommSubscriptionChannelTypes&lt;/members&gt;
+    &lt;members&gt;CommSubscriptionConsent.All_CommSubscriptionConsents&lt;/members&gt;
+    &lt;members&gt;CommSubscriptionTiming.All_CommSubscriptionTimings&lt;/members&gt;
+    &lt;members&gt;ConsumptionSchedule.All_ConsumptionSchedules&lt;/members&gt;
+    &lt;members&gt;ConsumptionSchedule.My_ConsumptionSchedules&lt;/members&gt;
+    &lt;members&gt;Contact.AllContacts&lt;/members&gt;
+    &lt;members&gt;Contact.BirthdaysThisMonth&lt;/members&gt;
+    &lt;members&gt;Contact.BulkMessageContacts&lt;/members&gt;
+    &lt;members&gt;Contact.MyContacts&lt;/members&gt;
+    &lt;members&gt;Contact.NewLastWeek&lt;/members&gt;
+    &lt;members&gt;Contact.NewThisWeek&lt;/members&gt;
+    &lt;members&gt;ContactPointAddress.All_ContactPointAddresses&lt;/members&gt;
+    &lt;members&gt;ContactPointConsent.All_ContactPointConsents&lt;/members&gt;
+    &lt;members&gt;ContactPointEmail.All_ContactPointEmails&lt;/members&gt;
+    &lt;members&gt;ContactPointPhone.All_ContactPointPhones&lt;/members&gt;
+    &lt;members&gt;ContactPointTypeConsent.All_ContactPointTypeConsents&lt;/members&gt;
+    &lt;members&gt;ContactRequest.My_ContactRequests&lt;/members&gt;
+    &lt;members&gt;Contract.AllActivatedContracts&lt;/members&gt;
+    &lt;members&gt;Contract.AllContracts&lt;/members&gt;
+    &lt;members&gt;Contract.AllDraftContracts&lt;/members&gt;
+    &lt;members&gt;Contract.AllInApprovalContracts&lt;/members&gt;
+    &lt;members&gt;Contract.MyActivatedContracts&lt;/members&gt;
+    &lt;members&gt;Contract.MyDraftContracts&lt;/members&gt;
+    &lt;members&gt;Contract.MyInApprovalContracts&lt;/members&gt;
+    &lt;members&gt;Coupon.ALL_Coupons&lt;/members&gt;
+    &lt;members&gt;CreditMemo.mine&lt;/members&gt;
+    &lt;members&gt;Customer.All_Customers&lt;/members&gt;
+    &lt;members&gt;DataUseLegalBasis.All_DataUseLegalBases&lt;/members&gt;
+    &lt;members&gt;DataUsePurpose.All_DataUsePurposes&lt;/members&gt;
+    &lt;members&gt;DigitalWallet.DigitalWallet&lt;/members&gt;
+    &lt;members&gt;EngagementChannelType.All_EngagementChannelTypes&lt;/members&gt;
+    &lt;members&gt;EngagementChannelWorkType.All_EngagementChannelWorkTypes&lt;/members&gt;
+    &lt;members&gt;EngagementChannelWorkType.My_EngagementChannelWorkTypes&lt;/members&gt;
+    &lt;members&gt;Entitlement.All_Entitlements&lt;/members&gt;
+    &lt;members&gt;Event.MyRecentEvents&lt;/members&gt;
+    &lt;members&gt;Event.MyTeamsRecentEvents&lt;/members&gt;
+    &lt;members&gt;Event.MyTeamsUpcomingEvents&lt;/members&gt;
+    &lt;members&gt;Event.MyUpcomingEvents&lt;/members&gt;
+    &lt;members&gt;Event.TodaysAgenda&lt;/members&gt;
+    &lt;members&gt;FinanceBalanceSnapshot.mine&lt;/members&gt;
+    &lt;members&gt;FinanceTransaction.mine&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationInstance.All_Orchestration_Instances&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationWorkItem.ALL_Open_Work_Items&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationWorkItem.All_Work_Items&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrder.all_fulfillment_orders&lt;/members&gt;
+    &lt;members&gt;Idea.Ideas_Last_7_Days&lt;/members&gt;
+    &lt;members&gt;Incident.AllIncidentsDefault&lt;/members&gt;
+    &lt;members&gt;Individual.All_Individuals&lt;/members&gt;
+    &lt;members&gt;Invoice.mine&lt;/members&gt;
+    &lt;members&gt;Lead.AllOpenLeads&lt;/members&gt;
+    &lt;members&gt;Lead.MyUnreadLeads&lt;/members&gt;
+    &lt;members&gt;Lead.TodaysLeads&lt;/members&gt;
+    &lt;members&gt;Lead.ViewCustom1&lt;/members&gt;
+    &lt;members&gt;Lead.ViewCustom2&lt;/members&gt;
+    &lt;members&gt;LegalEntity.mine&lt;/members&gt;
+    &lt;members&gt;Location.all_locations&lt;/members&gt;
+    &lt;members&gt;LocationGroup.LocationGroup&lt;/members&gt;
+    &lt;members&gt;MessagingEndUser.BulkMessageMessagingEndUsers&lt;/members&gt;
+    &lt;members&gt;OperatingHours.All_OperatingHours&lt;/members&gt;
+    &lt;members&gt;Opportunity.AllOpportunities&lt;/members&gt;
+    &lt;members&gt;Opportunity.ClosingNextMonth&lt;/members&gt;
+    &lt;members&gt;Opportunity.ClosingThisMonth&lt;/members&gt;
+    &lt;members&gt;Opportunity.Default_Opportunity_Pipeline&lt;/members&gt;
+    &lt;members&gt;Opportunity.MyOpportunities&lt;/members&gt;
+    &lt;members&gt;Opportunity.NewLastWeek&lt;/members&gt;
+    &lt;members&gt;Opportunity.NewThisWeek&lt;/members&gt;
+    &lt;members&gt;Opportunity.Private&lt;/members&gt;
+    &lt;members&gt;Opportunity.Won&lt;/members&gt;
+    &lt;members&gt;Order.AllActivatedOrders&lt;/members&gt;
+    &lt;members&gt;Order.AllDraftOrders&lt;/members&gt;
+    &lt;members&gt;Order.AllOrders&lt;/members&gt;
+    &lt;members&gt;Pais__c.All&lt;/members&gt;
+    &lt;members&gt;PartyConsent.All_PartyConsents&lt;/members&gt;
+    &lt;members&gt;PaymentAuthAdjustment.PaymentAuthAdjustment&lt;/members&gt;
+    &lt;members&gt;PaymentAuthorization.PaymentAuthorization&lt;/members&gt;
+    &lt;members&gt;PaymentGateway.PaymentGateway&lt;/members&gt;
+    &lt;members&gt;PaymentGroup.PaymentGroup&lt;/members&gt;
+    &lt;members&gt;PaymentLineInvoice.PaymentLineInvoice&lt;/members&gt;
+    &lt;members&gt;Payment.Payment&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c.All&lt;/members&gt;
+    &lt;members&gt;ProcessException.all_process_exceptions&lt;/members&gt;
+    &lt;members&gt;Product2.AllProducts&lt;/members&gt;
+    &lt;members&gt;ProductCatalog.All_Product_Catalogs_List_View&lt;/members&gt;
+    &lt;members&gt;ProductCategory.All_Product_Categories_List_View&lt;/members&gt;
+    &lt;members&gt;ProductCategory.Category_Hierarchy_SM&lt;/members&gt;
+    &lt;members&gt;ProductCategory.Org_ProductCategory_Hierarchy&lt;/members&gt;
+    &lt;members&gt;Recommendation.All_Recommendations&lt;/members&gt;
+    &lt;members&gt;RefundLinePayment.RefundLinePayment&lt;/members&gt;
+    &lt;members&gt;Refund.Refund&lt;/members&gt;
+    &lt;members&gt;ReturnOrder.All_ReturnOrders&lt;/members&gt;
+    &lt;members&gt;ReturnOrder.My_ReturnOrders&lt;/members&gt;
+    &lt;members&gt;Scorecard.AllScorecards&lt;/members&gt;
+    &lt;members&gt;Scorecard.MyScorecards&lt;/members&gt;
+    &lt;members&gt;Seller.All_Sellers&lt;/members&gt;
+    &lt;members&gt;ServiceAppointment.All_ServiceAppointments&lt;/members&gt;
+    &lt;members&gt;ServiceAppointment.MyPendingAppointments&lt;/members&gt;
+    &lt;members&gt;ServiceAppointment.MyScheduledAppointments&lt;/members&gt;
+    &lt;members&gt;ServiceContract.All_ServiceContracts&lt;/members&gt;
+    &lt;members&gt;ServiceResource.All_ServiceResources&lt;/members&gt;
+    &lt;members&gt;ServiceResource.My_ServiceResources&lt;/members&gt;
+    &lt;members&gt;ServiceTerritory.All_ServiceTerritories&lt;/members&gt;
+    &lt;members&gt;ServiceTerritory.My_ServiceTerritories&lt;/members&gt;
+    &lt;members&gt;Shift.All_Shifts&lt;/members&gt;
+    &lt;members&gt;ShiftEngagementChannel.All_ShiftEngagementChannels&lt;/members&gt;
+    &lt;members&gt;ShiftEngagementChannel.My_ShiftEngagementChannels&lt;/members&gt;
+    &lt;members&gt;Shift.My_Shifts&lt;/members&gt;
+    &lt;members&gt;ShiftWorkTopic.All_ShiftWorkTopics&lt;/members&gt;
+    &lt;members&gt;ShiftWorkTopic.My_ShiftWorkTopics&lt;/members&gt;
+    &lt;members&gt;SocialPersona.AllSocialPersonas&lt;/members&gt;
+    &lt;members&gt;Solution.AllReviewedSolutions&lt;/members&gt;
+    &lt;members&gt;Solution.AllUnreviewedSolutions&lt;/members&gt;
+    &lt;members&gt;Task.CompletedTasks&lt;/members&gt;
+    &lt;members&gt;Task.DelegatedTasks&lt;/members&gt;
+    &lt;members&gt;Task.OpenTasks&lt;/members&gt;
+    &lt;members&gt;Task.OverdueTasks&lt;/members&gt;
+    &lt;members&gt;Task.RecurringTasks&lt;/members&gt;
+    &lt;members&gt;Task.TodaysTasks&lt;/members&gt;
+    &lt;members&gt;Task.UnscheduledTasks&lt;/members&gt;
+    &lt;members&gt;User.ActiveUsers&lt;/members&gt;
+    &lt;members&gt;User.AdminUsers&lt;/members&gt;
+    &lt;members&gt;User.AllUsers&lt;/members&gt;
+    &lt;members&gt;VoiceCall.My_VoiceCalls&lt;/members&gt;
+    &lt;members&gt;Waitlist.All_Waitlists&lt;/members&gt;
+    &lt;members&gt;Waitlist.My_Waitlists&lt;/members&gt;
+    &lt;members&gt;WebCart.All_WebCarts&lt;/members&gt;
+    &lt;members&gt;WebCart.Owned_WebCarts&lt;/members&gt;
+    &lt;members&gt;WorkOrder.All_WorkOrders&lt;/members&gt;
+    &lt;members&gt;WorkOrder.My_WorkOrders&lt;/members&gt;
+    &lt;members&gt;WorkType.All_WorkTypes&lt;/members&gt;
+    &lt;members&gt;WorkTypeGroup.All_WorkTypeGroups&lt;/members&gt;
+    &lt;members&gt;WorkTypeGroup.My_WorkTypeGroups&lt;/members&gt;
+    &lt;members&gt;WorkType.My_WorkTypes&lt;/members&gt;
+    &lt;name&gt;ListView&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;cms_document&lt;/members&gt;
+    &lt;members&gt;cms_image&lt;/members&gt;
+    &lt;members&gt;news&lt;/members&gt;
+    &lt;name&gt;ManagedContentType&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account.Standard_Account_Match_Rule_v1_0&lt;/members&gt;
+    &lt;members&gt;Contact.Standard_Contact_Match_Rule_v1_1&lt;/members&gt;
+    &lt;members&gt;Lead.Standard_Lead_Match_Rule_v1_0&lt;/members&gt;
+    &lt;name&gt;MatchingRule&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account&lt;/members&gt;
+    &lt;members&gt;Contact&lt;/members&gt;
+    &lt;members&gt;Individual&lt;/members&gt;
+    &lt;members&gt;Lead&lt;/members&gt;
+    &lt;name&gt;MatchingRules&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Escalonar caso&lt;/members&gt;
+    &lt;members&gt;Fechar caso&lt;/members&gt;
+    &lt;members&gt;Primeira resposta ao cliente&lt;/members&gt;
+    &lt;name&gt;MilestoneType&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;NotificationTypeConfig&lt;/members&gt;
+    &lt;name&gt;NotificationTypeConfig&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Experience_Profile_Manager&lt;/members&gt;
+    &lt;members&gt;sfdcInternalInt__sfdc_scrt2&lt;/members&gt;
+    &lt;name&gt;PermissionSet&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;force__Enablement_Admin&lt;/members&gt;
+    &lt;members&gt;force__Enablement_Resources_Manager&lt;/members&gt;
+    &lt;members&gt;force__Enablement_User&lt;/members&gt;
+    &lt;members&gt;force__Partner_Enablement_User&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementBillingAdmin&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementBillingOperations&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementBuyerIntegrationUser&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementCollections&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementCreditMemoAdjustmentsOperations&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementPaymentAdministrator&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementPaymentOperations&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementProductAndPricingAdmin&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementSalesOperationsRep&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementSalesRep&lt;/members&gt;
+    &lt;members&gt;force__SubscriptionManagementTaxAdmin&lt;/members&gt;
+    &lt;name&gt;PermissionSetGroup&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Admin&lt;/members&gt;
+    &lt;members&gt;Analytics Cloud Integration User&lt;/members&gt;
+    &lt;members&gt;Analytics Cloud Security User&lt;/members&gt;
+    &lt;members&gt;Authenticated Website&lt;/members&gt;
+    &lt;members&gt;Avaliador&lt;/members&gt;
+    &lt;members&gt;B2B Reordering Portal Buyer Profile&lt;/members&gt;
+    &lt;members&gt;Chatter External User&lt;/members&gt;
+    &lt;members&gt;Chatter Free User&lt;/members&gt;
+    &lt;members&gt;Chatter Moderator User&lt;/members&gt;
+    &lt;members&gt;ContractManager&lt;/members&gt;
+    &lt;members&gt;Cross Org Data Proxy User&lt;/members&gt;
+    &lt;members&gt;Custom%3A Marketing Profile&lt;/members&gt;
+    &lt;members&gt;Custom%3A Sales Profile&lt;/members&gt;
+    &lt;members&gt;Custom%3A Support Profile&lt;/members&gt;
+    &lt;members&gt;Customer Community Login User&lt;/members&gt;
+    &lt;members&gt;Customer Community Plus Login User&lt;/members&gt;
+    &lt;members&gt;Customer Community Plus User&lt;/members&gt;
+    &lt;members&gt;Customer Community User&lt;/members&gt;
+    &lt;members&gt;Customer Portal Manager Custom&lt;/members&gt;
+    &lt;members&gt;Customer Portal Manager Standard&lt;/members&gt;
+    &lt;members&gt;External Apps Login User&lt;/members&gt;
+    &lt;members&gt;External Identity User&lt;/members&gt;
+    &lt;members&gt;Force%2Ecom - App Subscription User&lt;/members&gt;
+    &lt;members&gt;Force%2Ecom - Free User&lt;/members&gt;
+    &lt;members&gt;Gold Partner User&lt;/members&gt;
+    &lt;members&gt;High Volume Customer Portal User&lt;/members&gt;
+    &lt;members&gt;HighVolumePortal&lt;/members&gt;
+    &lt;members&gt;Identity User&lt;/members&gt;
+    &lt;members&gt;MarketingProfile&lt;/members&gt;
+    &lt;members&gt;Minimum Access - API Only Integrations&lt;/members&gt;
+    &lt;members&gt;Minimum Access - Salesforce&lt;/members&gt;
+    &lt;members&gt;Partner App Subscription User&lt;/members&gt;
+    &lt;members&gt;Partner Community Login User&lt;/members&gt;
+    &lt;members&gt;Partner Community User&lt;/members&gt;
+    &lt;members&gt;PlatformPortal&lt;/members&gt;
+    &lt;members&gt;Read Only&lt;/members&gt;
+    &lt;members&gt;Salesforce API Only System Integrations&lt;/members&gt;
+    &lt;members&gt;Silver Partner User&lt;/members&gt;
+    &lt;members&gt;SolutionManager&lt;/members&gt;
+    &lt;members&gt;Standard&lt;/members&gt;
+    &lt;members&gt;StandardAul&lt;/members&gt;
+    &lt;members&gt;Work%2Ecom Only User&lt;/members&gt;
+    &lt;name&gt;Profile&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Case.LogACall&lt;/members&gt;
+    &lt;members&gt;Case.NewChildCase&lt;/members&gt;
+    &lt;members&gt;CollaborationGroup.NewGroupMember&lt;/members&gt;
+    &lt;members&gt;CollaborationGroup.NewGroupRecord&lt;/members&gt;
+    &lt;members&gt;FeedItem.NewTaskFromFeedItem&lt;/members&gt;
+    &lt;members&gt;LogACall&lt;/members&gt;
+    &lt;members&gt;NewAccount&lt;/members&gt;
+    &lt;members&gt;NewCase&lt;/members&gt;
+    &lt;members&gt;NewContact&lt;/members&gt;
+    &lt;members&gt;NewEvent&lt;/members&gt;
+    &lt;members&gt;NewGroup&lt;/members&gt;
+    &lt;members&gt;NewLead&lt;/members&gt;
+    &lt;members&gt;NewNote&lt;/members&gt;
+    &lt;members&gt;NewOpportunity&lt;/members&gt;
+    &lt;members&gt;NewTask&lt;/members&gt;
+    &lt;members&gt;SendEmail&lt;/members&gt;
+    &lt;members&gt;Task.Defer&lt;/members&gt;
+    &lt;members&gt;Task.EditDescription&lt;/members&gt;
+    &lt;members&gt;Task.UpdatePriority&lt;/members&gt;
+    &lt;members&gt;Task.UpdateStatus&lt;/members&gt;
+    &lt;name&gt;QuickAction&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Metric.Completion&lt;/members&gt;
+    &lt;members&gt;Metric.Progress&lt;/members&gt;
+    &lt;name&gt;RecordType&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;ApexDevNet&lt;/members&gt;
+    &lt;members&gt;dbccompany72&lt;/members&gt;
+    &lt;name&gt;RemoteSiteSetting&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;EBotR_v3&lt;/members&gt;
+    &lt;members&gt;EBotR_v4&lt;/members&gt;
+    &lt;members&gt;EBotR_v5&lt;/members&gt;
+    &lt;members&gt;EinsteinBotReports&lt;/members&gt;
+    &lt;members&gt;EinsteinBotReports_v2&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Exercise_Completion_by_Days_to_Complete_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Exercise_Completion_by_User_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Exercise_Completion_Status_by_Section_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Exercise_Completion_Status_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Milestone_Completion_Status_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Milestone_Progress_by_User_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Milestone_Progress_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Outcome_Progress_by_User_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Outcome_Progress_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Program_Exercises_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Program_Milestones_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;EnablementDashboardReports_sfdcSESv60/Program_Overview_by_User_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;unfiled$public&lt;/members&gt;
+    &lt;members&gt;unfiled$public/flow_orchestration_log_ootb_report_two_four_eight&lt;/members&gt;
+    &lt;members&gt;unfiled$public/flow_orchestration_run_ootb_report_two_four_eight&lt;/members&gt;
+    &lt;members&gt;unfiled$public/flow_orchestration_stage_run_ootb_report_two_four_eight&lt;/members&gt;
+    &lt;members&gt;unfiled$public/flow_orchestration_step_run_ootb_report_two_four_eight&lt;/members&gt;
+    &lt;members&gt;unfiled$public/flow_orchestration_work_item_ootb_report_two_four_eight&lt;/members&gt;
+    &lt;members&gt;unfiled$public/flow_screen_prebuilt_report&lt;/members&gt;
+    &lt;name&gt;Report&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;flow_orchestration_log_ootb_crt_two_four_eight&lt;/members&gt;
+    &lt;members&gt;flow_orchestration_run_ootb_crt_two_four_eight&lt;/members&gt;
+    &lt;members&gt;flow_orchestration_stage_run_ootb_crt_two_four_eight&lt;/members&gt;
+    &lt;members&gt;flow_orchestration_step_run_ootb_crt_two_four_eight&lt;/members&gt;
+    &lt;members&gt;flow_orchestration_work_item_ootb_crt_two_four_eight&lt;/members&gt;
+    &lt;members&gt;Program_Definition_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;Program_Progress_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;Program_Task_Progress_sfdcSESv60&lt;/members&gt;
+    &lt;members&gt;screen_flows_prebuilt_crt&lt;/members&gt;
+    &lt;name&gt;ReportType&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;CEO&lt;/members&gt;
+    &lt;members&gt;CFO&lt;/members&gt;
+    &lt;members&gt;ChannelSalesTeam&lt;/members&gt;
+    &lt;members&gt;COO&lt;/members&gt;
+    &lt;members&gt;CustomerSupportInternational&lt;/members&gt;
+    &lt;members&gt;CustomerSupportNorthAmerica&lt;/members&gt;
+    &lt;members&gt;DirectorChannelSales&lt;/members&gt;
+    &lt;members&gt;DirectorDirectSales&lt;/members&gt;
+    &lt;members&gt;EasternSalesTeam&lt;/members&gt;
+    &lt;members&gt;InstallationRepairServices&lt;/members&gt;
+    &lt;members&gt;MarketingTeam&lt;/members&gt;
+    &lt;members&gt;SVPCustomerServiceSupport&lt;/members&gt;
+    &lt;members&gt;SVPHumanResources&lt;/members&gt;
+    &lt;members&gt;SVPSalesMarketing&lt;/members&gt;
+    &lt;members&gt;VPInternationalSales&lt;/members&gt;
+    &lt;members&gt;VPMarketing&lt;/members&gt;
+    &lt;members&gt;VPNorthAmericanSales&lt;/members&gt;
+    &lt;members&gt;WesternSalesTeam&lt;/members&gt;
+    &lt;name&gt;Role&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account&lt;/members&gt;
+    &lt;members&gt;AccountIntelligence&lt;/members&gt;
+    &lt;members&gt;Actions&lt;/members&gt;
+    &lt;members&gt;Activities&lt;/members&gt;
+    &lt;members&gt;Address&lt;/members&gt;
+    &lt;members&gt;Analytics&lt;/members&gt;
+    &lt;members&gt;Apex&lt;/members&gt;
+    &lt;members&gt;AppAnalytics&lt;/members&gt;
+    &lt;members&gt;AppExperience&lt;/members&gt;
+    &lt;members&gt;Archive&lt;/members&gt;
+    &lt;members&gt;Blockchain&lt;/members&gt;
+    &lt;members&gt;Bot&lt;/members&gt;
+    &lt;members&gt;BusinessHours&lt;/members&gt;
+    &lt;members&gt;Campaign&lt;/members&gt;
+    &lt;members&gt;Case&lt;/members&gt;
+    &lt;members&gt;Chatter&lt;/members&gt;
+    &lt;members&gt;ChatterEmailsMD&lt;/members&gt;
+    &lt;members&gt;Commerce&lt;/members&gt;
+    &lt;members&gt;Communities&lt;/members&gt;
+    &lt;members&gt;Company&lt;/members&gt;
+    &lt;members&gt;ConnectedApp&lt;/members&gt;
+    &lt;members&gt;Content&lt;/members&gt;
+    &lt;members&gt;Contract&lt;/members&gt;
+    &lt;members&gt;ConversationalIntelligence&lt;/members&gt;
+    &lt;members&gt;Currency&lt;/members&gt;
+    &lt;members&gt;CustomAddressField&lt;/members&gt;
+    &lt;members&gt;CustomerDataPlatform&lt;/members&gt;
+    &lt;members&gt;DataDotCom&lt;/members&gt;
+    &lt;members&gt;Deployment&lt;/members&gt;
+    &lt;members&gt;DevHub&lt;/members&gt;
+    &lt;members&gt;Discovery&lt;/members&gt;
+    &lt;members&gt;DocumentChecklist&lt;/members&gt;
+    &lt;members&gt;EAC&lt;/members&gt;
+    &lt;members&gt;EinsteinDocumentCapture&lt;/members&gt;
+    &lt;members&gt;EmailAdministration&lt;/members&gt;
+    &lt;members&gt;EmailIntegration&lt;/members&gt;
+    &lt;members&gt;EmailTemplate&lt;/members&gt;
+    &lt;members&gt;EmployeeFieldAccess&lt;/members&gt;
+    &lt;members&gt;EmployeeUser&lt;/members&gt;
+    &lt;members&gt;EncryptionKey&lt;/members&gt;
+    &lt;members&gt;EnhancedNotes&lt;/members&gt;
+    &lt;members&gt;Entitlement&lt;/members&gt;
+    &lt;members&gt;Essentials&lt;/members&gt;
+    &lt;members&gt;Event&lt;/members&gt;
+    &lt;members&gt;ExperienceBundle&lt;/members&gt;
+    &lt;members&gt;ExternalServices&lt;/members&gt;
+    &lt;members&gt;FieldService&lt;/members&gt;
+    &lt;members&gt;FilesConnect&lt;/members&gt;
+    &lt;members&gt;FileUploadAndDownloadSecurity&lt;/members&gt;
+    &lt;members&gt;Flow&lt;/members&gt;
+    &lt;members&gt;Forecasting&lt;/members&gt;
+    &lt;members&gt;Formula&lt;/members&gt;
+    &lt;members&gt;GoogleApps&lt;/members&gt;
+    &lt;members&gt;HighVelocitySales&lt;/members&gt;
+    &lt;members&gt;Ideas&lt;/members&gt;
+    &lt;members&gt;IncidentMgmt&lt;/members&gt;
+    &lt;members&gt;Industries&lt;/members&gt;
+    &lt;members&gt;Inventory&lt;/members&gt;
+    &lt;members&gt;InvLatePymntRiskCalc&lt;/members&gt;
+    &lt;members&gt;InvocableAction&lt;/members&gt;
+    &lt;members&gt;Knowledge&lt;/members&gt;
+    &lt;members&gt;Language&lt;/members&gt;
+    &lt;members&gt;LeadConfig&lt;/members&gt;
+    &lt;members&gt;LightningExperience&lt;/members&gt;
+    &lt;members&gt;LiveAgent&lt;/members&gt;
+    &lt;members&gt;LiveMessage&lt;/members&gt;
+    &lt;members&gt;Macro&lt;/members&gt;
+    &lt;members&gt;MailMerge&lt;/members&gt;
+    &lt;members&gt;Meetings&lt;/members&gt;
+    &lt;members&gt;Mobile&lt;/members&gt;
+    &lt;members&gt;MyDomain&lt;/members&gt;
+    &lt;members&gt;Name&lt;/members&gt;
+    &lt;members&gt;Notifications&lt;/members&gt;
+    &lt;members&gt;ObjectLinking&lt;/members&gt;
+    &lt;members&gt;OmniChannel&lt;/members&gt;
+    &lt;members&gt;Opportunity&lt;/members&gt;
+    &lt;members&gt;Order&lt;/members&gt;
+    &lt;members&gt;OrderManagement&lt;/members&gt;
+    &lt;members&gt;Org&lt;/members&gt;
+    &lt;members&gt;Pardot&lt;/members&gt;
+    &lt;members&gt;PardotEinstein&lt;/members&gt;
+    &lt;members&gt;PartyDataModel&lt;/members&gt;
+    &lt;members&gt;PathAssistant&lt;/members&gt;
+    &lt;members&gt;PaymentsManagementEnabled&lt;/members&gt;
+    &lt;members&gt;Picklist&lt;/members&gt;
+    &lt;members&gt;PlatformEncryption&lt;/members&gt;
+    &lt;members&gt;Portals&lt;/members&gt;
+    &lt;members&gt;PredictionBuilder&lt;/members&gt;
+    &lt;members&gt;Privacy&lt;/members&gt;
+    &lt;members&gt;Product&lt;/members&gt;
+    &lt;members&gt;QuickText&lt;/members&gt;
+    &lt;members&gt;Quote&lt;/members&gt;
+    &lt;members&gt;RealTimeEvent&lt;/members&gt;
+    &lt;members&gt;RecommendationBuilder&lt;/members&gt;
+    &lt;members&gt;RecordPage&lt;/members&gt;
+    &lt;members&gt;RetailExecution&lt;/members&gt;
+    &lt;members&gt;Schema&lt;/members&gt;
+    &lt;members&gt;Search&lt;/members&gt;
+    &lt;members&gt;Security&lt;/members&gt;
+    &lt;members&gt;ServiceCloudVoice&lt;/members&gt;
+    &lt;members&gt;ServiceSetupAssistant&lt;/members&gt;
+    &lt;members&gt;Sharing&lt;/members&gt;
+    &lt;members&gt;Site&lt;/members&gt;
+    &lt;members&gt;SocialProfile&lt;/members&gt;
+    &lt;members&gt;SourceTracking&lt;/members&gt;
+    &lt;members&gt;Survey&lt;/members&gt;
+    &lt;members&gt;SystemNotification&lt;/members&gt;
+    &lt;members&gt;Territory2&lt;/members&gt;
+    &lt;members&gt;Trailhead&lt;/members&gt;
+    &lt;members&gt;TrialOrg&lt;/members&gt;
+    &lt;members&gt;UserEngagement&lt;/members&gt;
+    &lt;members&gt;UserInterface&lt;/members&gt;
+    &lt;members&gt;UserManagement&lt;/members&gt;
+    &lt;members&gt;Voice&lt;/members&gt;
+    &lt;members&gt;WebToX&lt;/members&gt;
+    &lt;members&gt;WorkDotCom&lt;/members&gt;
+    &lt;name&gt;Settings&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account&lt;/members&gt;
+    &lt;members&gt;ActivityRecurrence2&lt;/members&gt;
+    &lt;members&gt;ActivityRecurrence2Exception&lt;/members&gt;
+    &lt;members&gt;AlternativePaymentMethod&lt;/members&gt;
+    &lt;members&gt;AppointmentInvitation&lt;/members&gt;
+    &lt;members&gt;Asset&lt;/members&gt;
+    &lt;members&gt;AssistantInteraction&lt;/members&gt;
+    &lt;members&gt;AssistantProgress&lt;/members&gt;
+    &lt;members&gt;AssistantRecommendation&lt;/members&gt;
+    &lt;members&gt;AuthorizationForm&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormConsent&lt;/members&gt;
+    &lt;members&gt;AuthorizationFormDataUse&lt;/members&gt;
+    &lt;members&gt;BusinessBrand&lt;/members&gt;
+    &lt;members&gt;BuyerGroup&lt;/members&gt;
+    &lt;members&gt;CalendarModel&lt;/members&gt;
+    &lt;members&gt;CalendarView&lt;/members&gt;
+    &lt;members&gt;Campaign&lt;/members&gt;
+    &lt;members&gt;Case&lt;/members&gt;
+    &lt;members&gt;ChangeRequest&lt;/members&gt;
+    &lt;members&gt;CleanLeadBackup&lt;/members&gt;
+    &lt;members&gt;CommerceJobStatus&lt;/members&gt;
+    &lt;members&gt;CommSubscription&lt;/members&gt;
+    &lt;members&gt;CommSubscriptionChannelType&lt;/members&gt;
+    &lt;members&gt;CommSubscriptionConsent&lt;/members&gt;
+    &lt;members&gt;ComponentResponseCache&lt;/members&gt;
+    &lt;members&gt;ConsumptionSchedule&lt;/members&gt;
+    &lt;members&gt;Contact&lt;/members&gt;
+    &lt;members&gt;ContactPointConsent&lt;/members&gt;
+    &lt;members&gt;ContactPointTypeConsent&lt;/members&gt;
+    &lt;members&gt;ContactRequest&lt;/members&gt;
+    &lt;members&gt;ConvCoachingRecommendation&lt;/members&gt;
+    &lt;members&gt;Coupon&lt;/members&gt;
+    &lt;members&gt;CouponCodeRedemption&lt;/members&gt;
+    &lt;members&gt;CreditMemo&lt;/members&gt;
+    &lt;members&gt;Customer&lt;/members&gt;
+    &lt;members&gt;DataUseLegalBasis&lt;/members&gt;
+    &lt;members&gt;DataUsePurpose&lt;/members&gt;
+    &lt;members&gt;EngagementChannelType&lt;/members&gt;
+    &lt;members&gt;ExchangeUserMapping&lt;/members&gt;
+    &lt;members&gt;ExternalEventMapping&lt;/members&gt;
+    &lt;members&gt;FinanceBalanceSnapshot&lt;/members&gt;
+    &lt;members&gt;FinanceTransaction&lt;/members&gt;
+    &lt;members&gt;FlowInterview&lt;/members&gt;
+    &lt;members&gt;FlowInterviewLog&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationInstance&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationStageInstance&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationStepInstance&lt;/members&gt;
+    &lt;members&gt;FlowOrchestrationWorkItem&lt;/members&gt;
+    &lt;members&gt;FlowTestResult&lt;/members&gt;
+    &lt;members&gt;FulfillmentOrder&lt;/members&gt;
+    &lt;members&gt;Image&lt;/members&gt;
+    &lt;members&gt;Incident&lt;/members&gt;
+    &lt;members&gt;Individual&lt;/members&gt;
+    &lt;members&gt;InventoryReservation&lt;/members&gt;
+    &lt;members&gt;Invoice&lt;/members&gt;
+    &lt;members&gt;Lead&lt;/members&gt;
+    &lt;members&gt;LearningItem&lt;/members&gt;
+    &lt;members&gt;LegalEntity&lt;/members&gt;
+    &lt;members&gt;ListEmail&lt;/members&gt;
+    &lt;members&gt;Location&lt;/members&gt;
+    &lt;members&gt;LocationGroup&lt;/members&gt;
+    &lt;members&gt;Macro&lt;/members&gt;
+    &lt;members&gt;MacroUsage&lt;/members&gt;
+    &lt;members&gt;MessagingEndUser&lt;/members&gt;
+    &lt;members&gt;MessagingSession&lt;/members&gt;
+    &lt;members&gt;NotifDeliveryUserPref&lt;/members&gt;
+    &lt;members&gt;OperatingHours&lt;/members&gt;
+    &lt;members&gt;Opportunity&lt;/members&gt;
+    &lt;members&gt;Order&lt;/members&gt;
+    &lt;members&gt;OrgDeleteRequest&lt;/members&gt;
+    &lt;members&gt;Pais__c&lt;/members&gt;
+    &lt;members&gt;PartyConsent&lt;/members&gt;
+    &lt;members&gt;PrivacyJobSession&lt;/members&gt;
+    &lt;members&gt;PrivacyObjectSession&lt;/members&gt;
+    &lt;members&gt;PrivacyRTBFRequest&lt;/members&gt;
+    &lt;members&gt;PrivacySessionRecordFailure&lt;/members&gt;
+    &lt;members&gt;Problem&lt;/members&gt;
+    &lt;members&gt;ProcessException&lt;/members&gt;
+    &lt;members&gt;Product2&lt;/members&gt;
+    &lt;members&gt;ProductCatalog&lt;/members&gt;
+    &lt;members&gt;Promotion&lt;/members&gt;
+    &lt;members&gt;PromotionLineItemRule&lt;/members&gt;
+    &lt;members&gt;PromotionSegment&lt;/members&gt;
+    &lt;members&gt;PromptAction&lt;/members&gt;
+    &lt;members&gt;PromptError&lt;/members&gt;
+    &lt;members&gt;QuickText&lt;/members&gt;
+    &lt;members&gt;QuickTextUsage&lt;/members&gt;
+    &lt;members&gt;RecordMergeHistory&lt;/members&gt;
+    &lt;members&gt;ReportResultBlob&lt;/members&gt;
+    &lt;members&gt;ReturnOrder&lt;/members&gt;
+    &lt;members&gt;Scorecard&lt;/members&gt;
+    &lt;members&gt;Seller&lt;/members&gt;
+    &lt;members&gt;ServiceAppointment&lt;/members&gt;
+    &lt;members&gt;ServiceAppointmentAttendee&lt;/members&gt;
+    &lt;members&gt;ServiceContract&lt;/members&gt;
+    &lt;members&gt;ServiceResource&lt;/members&gt;
+    &lt;members&gt;ServiceTerritory&lt;/members&gt;
+    &lt;members&gt;Shift&lt;/members&gt;
+    &lt;members&gt;Shipment&lt;/members&gt;
+    &lt;members&gt;ShippingConfigurationSet&lt;/members&gt;
+    &lt;members&gt;SiqUserBlacklist&lt;/members&gt;
+    &lt;members&gt;StreamActivityAccess&lt;/members&gt;
+    &lt;members&gt;StreamingChannel&lt;/members&gt;
+    &lt;members&gt;TableauHostMapping&lt;/members&gt;
+    &lt;members&gt;TodayGoal&lt;/members&gt;
+    &lt;members&gt;User&lt;/members&gt;
+    &lt;members&gt;UserAppMenuCustomization&lt;/members&gt;
+    &lt;members&gt;UserEmailPreferredPerson&lt;/members&gt;
+    &lt;members&gt;UserExternalCredential&lt;/members&gt;
+    &lt;members&gt;UserPrioritizedRecord&lt;/members&gt;
+    &lt;members&gt;UserProvisioningRequest&lt;/members&gt;
+    &lt;members&gt;VoiceCall&lt;/members&gt;
+    &lt;members&gt;VoiceChnlInteractionEvent&lt;/members&gt;
+    &lt;members&gt;Waitlist&lt;/members&gt;
+    &lt;members&gt;WebCart&lt;/members&gt;
+    &lt;members&gt;WebStore&lt;/members&gt;
+    &lt;members&gt;WorkOrder&lt;/members&gt;
+    &lt;members&gt;WorkPlan&lt;/members&gt;
+    &lt;members&gt;WorkPlanTemplate&lt;/members&gt;
+    &lt;members&gt;WorkStepTemplate&lt;/members&gt;
+    &lt;members&gt;WorkType&lt;/members&gt;
+    &lt;members&gt;WorkTypeGroup&lt;/members&gt;
+    &lt;name&gt;SharingRules&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account&lt;/members&gt;
+    &lt;members&gt;Asset&lt;/members&gt;
+    &lt;members&gt;Campaign&lt;/members&gt;
+    &lt;members&gt;Case&lt;/members&gt;
+    &lt;members&gt;ChangeRequest&lt;/members&gt;
+    &lt;members&gt;Contact&lt;/members&gt;
+    &lt;members&gt;ContentDocument&lt;/members&gt;
+    &lt;members&gt;Contract&lt;/members&gt;
+    &lt;members&gt;Event&lt;/members&gt;
+    &lt;members&gt;Incident&lt;/members&gt;
+    &lt;members&gt;Lead&lt;/members&gt;
+    &lt;members&gt;Opportunity&lt;/members&gt;
+    &lt;members&gt;Order&lt;/members&gt;
+    &lt;members&gt;Pais__c&lt;/members&gt;
+    &lt;members&gt;Pedido_C__c&lt;/members&gt;
+    &lt;members&gt;Problem&lt;/members&gt;
+    &lt;members&gt;ResourceAbsence&lt;/members&gt;
+    &lt;members&gt;ResourcePreference&lt;/members&gt;
+    &lt;members&gt;ReturnOrder&lt;/members&gt;
+    &lt;members&gt;ReturnOrderLineItem&lt;/members&gt;
+    &lt;members&gt;ServiceAppointment&lt;/members&gt;
+    &lt;members&gt;ServiceResource&lt;/members&gt;
+    &lt;members&gt;ServiceResourceSkill&lt;/members&gt;
+    &lt;members&gt;ServiceTerritory&lt;/members&gt;
+    &lt;members&gt;ServiceTerritoryMember&lt;/members&gt;
+    &lt;members&gt;Shift&lt;/members&gt;
+    &lt;members&gt;Shipment&lt;/members&gt;
+    &lt;members&gt;Solution&lt;/members&gt;
+    &lt;members&gt;Task&lt;/members&gt;
+    &lt;members&gt;WorkOrder&lt;/members&gt;
+    &lt;members&gt;WorkOrderLineItem&lt;/members&gt;
+    &lt;members&gt;WorkPlan&lt;/members&gt;
+    &lt;members&gt;WorkPlanTemplate&lt;/members&gt;
+    &lt;members&gt;WorkPlanTemplateEntry&lt;/members&gt;
+    &lt;members&gt;WorkStep&lt;/members&gt;
+    &lt;members&gt;WorkStepTemplate&lt;/members&gt;
+    &lt;name&gt;TopicsForObjects&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Account.Billing&lt;/members&gt;
+    &lt;members&gt;Campaign.ViewCampaignInfluenceReport&lt;/members&gt;
+    &lt;members&gt;Case.UpsellCrosssellOpportunity&lt;/members&gt;
+    &lt;members&gt;Opportunity.DeliveryStatus&lt;/members&gt;
+    &lt;name&gt;WebLink&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Case&lt;/members&gt;
+    &lt;name&gt;Workflow&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;types&gt;
+    &lt;members&gt;Case.ChangePriorityToHigh&lt;/members&gt;
+    &lt;name&gt;WorkflowFieldUpdate&lt;/name&gt;
+  &lt;/types&gt;
+  &lt;version&gt;55.0&lt;/version&gt;
+&lt;/Package&gt;
+</pre><div class="jso-cursor-trail-wrapper" style="position: fixed; left: 0px; top: 0px; width: 100vw; height: 100vh; overflow: hidden; pointer-events: none; z-index: 9999;"><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 336 336">
+              <path fill="#ffed8a" d="M168 235.2C128.4 235.2 88.8 252.4 49.2 286.8 83.6 247.2 100.8 207.6 100.8 168 100.8 128.4 83.6 88.8 49.2 49.2 88.8 83.6 128.4 100.8 168 100.8 207.6 100.8 247.2 83.6 286.8 49.2 252.4 88.8 235.2 128.4 235.2 168 235.2 207.6 252.4 247.2 286.8 286.8 247.2 252.4 207.6 235.2 168 235.2Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <path fill="#e3d881" d="M168 218.4C128.4 218.4 88.8 241.2 49.2 286.8 94.8 247.2 117.6 207.6 117.6 168 117.6 128.4 94.8 88.8 49.2 49.2 88.8 94.8 128.4 117.6 168 117.6 207.6 117.6 247.2 94.8 286.8 49.2 241.2 88.8 218.4 128.4 218.4 168 218.4 207.6 241.2 247.2 286.8 286.8 247.2 241.2 207.6 218.4 168 218.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 336 336">
+              <path fill="#e6d65e" d="M168 226.8C128.4 226.8 88.8 246.8 49.2 286.8 89.2 247.2 109.2 207.6 109.2 168 109.2 128.4 89.2 88.8 49.2 49.2 88.8 89.2 128.4 109.2 168 109.2 207.6 109.2 247.2 89.2 286.8 49.2 246.8 88.8 226.8 128.4 226.8 168 226.8 207.6 246.8 247.2 286.8 286.8 247.2 246.8 207.6 226.8 168 226.8Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <path fill="#e3d881" d="M168 218.4C128.4 218.4 88.8 241.2 49.2 286.8 94.8 247.2 117.6 207.6 117.6 168 117.6 128.4 94.8 88.8 49.2 49.2 88.8 94.8 128.4 117.6 168 117.6 207.6 117.6 247.2 94.8 286.8 49.2 241.2 88.8 218.4 128.4 218.4 168 218.4 207.6 241.2 247.2 286.8 286.8 247.2 241.2 207.6 218.4 168 218.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 336 336">
+              <path fill="#ffed8a" d="M168 235.2C128.4 235.2 88.8 252.4 49.2 286.8 83.6 247.2 100.8 207.6 100.8 168 100.8 128.4 83.6 88.8 49.2 49.2 88.8 83.6 128.4 100.8 168 100.8 207.6 100.8 247.2 83.6 286.8 49.2 252.4 88.8 235.2 128.4 235.2 168 235.2 207.6 252.4 247.2 286.8 286.8 247.2 252.4 207.6 235.2 168 235.2Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 336 336">
+              <path fill="#ffed8a" d="M168 235.2C128.4 235.2 88.8 252.4 49.2 286.8 83.6 247.2 100.8 207.6 100.8 168 100.8 128.4 83.6 88.8 49.2 49.2 88.8 83.6 128.4 100.8 168 100.8 207.6 100.8 247.2 83.6 286.8 49.2 252.4 88.8 235.2 128.4 235.2 168 235.2 207.6 252.4 247.2 286.8 286.8 247.2 252.4 207.6 235.2 168 235.2Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <path fill="#e3d881" d="M168 218.4C128.4 218.4 88.8 241.2 49.2 286.8 94.8 247.2 117.6 207.6 117.6 168 117.6 128.4 94.8 88.8 49.2 49.2 88.8 94.8 128.4 117.6 168 117.6 207.6 117.6 247.2 94.8 286.8 49.2 241.2 88.8 218.4 128.4 218.4 168 218.4 207.6 241.2 247.2 286.8 286.8 247.2 241.2 207.6 218.4 168 218.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 1443px; top: 36px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 623px; top: 1px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 336 336">
+              <path fill="#ffed8a" d="M168 235.2C128.4 235.2 88.8 252.4 49.2 286.8 83.6 247.2 100.8 207.6 100.8 168 100.8 128.4 83.6 88.8 49.2 49.2 88.8 83.6 128.4 100.8 168 100.8 207.6 100.8 247.2 83.6 286.8 49.2 252.4 88.8 235.2 128.4 235.2 168 235.2 207.6 252.4 247.2 286.8 286.8 247.2 252.4 207.6 235.2 168 235.2Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 571px; top: 17px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 336 336">
+              <path fill="#ffed8a" d="M168 235.2C128.4 235.2 88.8 252.4 49.2 286.8 83.6 247.2 100.8 207.6 100.8 168 100.8 128.4 83.6 88.8 49.2 49.2 88.8 83.6 128.4 100.8 168 100.8 207.6 100.8 247.2 83.6 286.8 49.2 252.4 88.8 235.2 128.4 235.2 168 235.2 207.6 252.4 247.2 286.8 286.8 247.2 252.4 207.6 235.2 168 235.2Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 577px; top: 17px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <path fill="#e3d881" d="M168 218.4C128.4 218.4 88.8 241.2 49.2 286.8 94.8 247.2 117.6 207.6 117.6 168 117.6 128.4 94.8 88.8 49.2 49.2 88.8 94.8 128.4 117.6 168 117.6 207.6 117.6 247.2 94.8 286.8 49.2 241.2 88.8 218.4 128.4 218.4 168 218.4 207.6 241.2 247.2 286.8 286.8 247.2 241.2 207.6 218.4 168 218.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 591px; top: 16px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 599px; top: 15px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 313px; top: 181px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 336 336">
+              <path fill="#ffcf5f" d="M168 243.6C128.4 243.6 88.8 258 49.2 286.8 78 247.2 92.4 207.6 92.4 168 92.4 128.4 78 88.8 49.2 49.2 88.8 78 128.4 92.4 168 92.4 207.6 92.4 247.2 78 286.8 49.2 258 88.8 243.6 128.4 243.6 168 243.6 207.6 258 247.2 286.8 286.8 247.2 258 207.6 243.6 168 243.6Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 323px; top: 170px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 384px; top: 123px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 336 336">
+              <path fill="#ffcf5f" d="M168 243.6C128.4 243.6 88.8 258 49.2 286.8 78 247.2 92.4 207.6 92.4 168 92.4 128.4 78 88.8 49.2 49.2 88.8 78 128.4 92.4 168 92.4 207.6 92.4 247.2 78 286.8 49.2 258 88.8 243.6 128.4 243.6 168 243.6 207.6 258 247.2 286.8 286.8 247.2 258 207.6 243.6 168 243.6Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 480px; top: 72px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 336 336">
+              <path fill="#ffcf5f" d="M168 243.6C128.4 243.6 88.8 258 49.2 286.8 78 247.2 92.4 207.6 92.4 168 92.4 128.4 78 88.8 49.2 49.2 88.8 78 128.4 92.4 168 92.4 207.6 92.4 247.2 78 286.8 49.2 258 88.8 243.6 128.4 243.6 168 243.6 207.6 258 247.2 286.8 286.8 247.2 258 207.6 243.6 168 243.6Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 645px; top: 3px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 318px; top: 26px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 296px; top: 181px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 336 336">
+              <path fill="#ffcf5f" d="M168 243.6C128.4 243.6 88.8 258 49.2 286.8 78 247.2 92.4 207.6 92.4 168 92.4 128.4 78 88.8 49.2 49.2 88.8 78 128.4 92.4 168 92.4 207.6 92.4 247.2 78 286.8 49.2 258 88.8 243.6 128.4 243.6 168 243.6 207.6 258 247.2 286.8 286.8 247.2 258 207.6 243.6 168 243.6Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 266px; top: 323px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <path fill="#e3d881" d="M168 218.4C128.4 218.4 88.8 241.2 49.2 286.8 94.8 247.2 117.6 207.6 117.6 168 117.6 128.4 94.8 88.8 49.2 49.2 88.8 94.8 128.4 117.6 168 117.6 207.6 117.6 247.2 94.8 286.8 49.2 241.2 88.8 218.4 128.4 218.4 168 218.4 207.6 241.2 247.2 286.8 286.8 247.2 241.2 207.6 218.4 168 218.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 244px; top: 383px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 246px; top: 386px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 266px; top: 400px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 284px; top: 384px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 320px; top: 353px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 421px; top: 309px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <path fill="#e3d881" d="M168 218.4C128.4 218.4 88.8 241.2 49.2 286.8 94.8 247.2 117.6 207.6 117.6 168 117.6 128.4 94.8 88.8 49.2 49.2 88.8 94.8 128.4 117.6 168 117.6 207.6 117.6 247.2 94.8 286.8 49.2 241.2 88.8 218.4 128.4 218.4 168 218.4 207.6 241.2 247.2 286.8 286.8 247.2 241.2 207.6 218.4 168 218.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 581px; top: 257px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 336 336">
+              <path fill="#e6d65e" d="M168 226.8C128.4 226.8 88.8 246.8 49.2 286.8 89.2 247.2 109.2 207.6 109.2 168 109.2 128.4 89.2 88.8 49.2 49.2 88.8 89.2 128.4 109.2 168 109.2 207.6 109.2 247.2 89.2 286.8 49.2 246.8 88.8 226.8 128.4 226.8 168 226.8 207.6 246.8 247.2 286.8 286.8 247.2 246.8 207.6 226.8 168 226.8Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 791px; top: 198px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 336 336">
+              <path fill="#e6d65e" d="M168 226.8C128.4 226.8 88.8 246.8 49.2 286.8 89.2 247.2 109.2 207.6 109.2 168 109.2 128.4 89.2 88.8 49.2 49.2 88.8 89.2 128.4 109.2 168 109.2 207.6 109.2 247.2 89.2 286.8 49.2 246.8 88.8 226.8 128.4 226.8 168 226.8 207.6 246.8 247.2 286.8 286.8 247.2 246.8 207.6 226.8 168 226.8Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 978px; top: 154px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 1276px; top: 88px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 1428px; top: 50px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 336 336">
+              <path fill="#ffcf5f" d="M168 243.6C128.4 243.6 88.8 258 49.2 286.8 78 247.2 92.4 207.6 92.4 168 92.4 128.4 78 88.8 49.2 49.2 88.8 78 128.4 92.4 168 92.4 207.6 92.4 247.2 78 286.8 49.2 258 88.8 243.6 128.4 243.6 168 243.6 207.6 258 247.2 286.8 286.8 247.2 258 207.6 243.6 168 243.6Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 336 336">
+              <path fill="#e6d65e" d="M168 226.8C128.4 226.8 88.8 246.8 49.2 286.8 89.2 247.2 109.2 207.6 109.2 168 109.2 128.4 89.2 88.8 49.2 49.2 88.8 89.2 128.4 109.2 168 109.2 207.6 109.2 247.2 89.2 286.8 49.2 246.8 88.8 226.8 128.4 226.8 168 226.8 207.6 246.8 247.2 286.8 286.8 247.2 246.8 207.6 226.8 168 226.8Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 336 336">
+              <path fill="#ffcf5f" d="M168 243.6C128.4 243.6 88.8 258 49.2 286.8 78 247.2 92.4 207.6 92.4 168 92.4 128.4 78 88.8 49.2 49.2 88.8 78 128.4 92.4 168 92.4 207.6 92.4 247.2 78 286.8 49.2 258 88.8 243.6 128.4 243.6 168 243.6 207.6 258 247.2 286.8 286.8 247.2 258 207.6 243.6 168 243.6Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 336 336">
+              <path fill="#ffed8a" d="M168 235.2C128.4 235.2 88.8 252.4 49.2 286.8 83.6 247.2 100.8 207.6 100.8 168 100.8 128.4 83.6 88.8 49.2 49.2 88.8 83.6 128.4 100.8 168 100.8 207.6 100.8 247.2 83.6 286.8 49.2 252.4 88.8 235.2 128.4 235.2 168 235.2 207.6 252.4 247.2 286.8 286.8 247.2 252.4 207.6 235.2 168 235.2Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 336 336">
+              <path fill="#ffcf5f" d="M168 243.6C128.4 243.6 88.8 258 49.2 286.8 78 247.2 92.4 207.6 92.4 168 92.4 128.4 78 88.8 49.2 49.2 88.8 78 128.4 92.4 168 92.4 207.6 92.4 247.2 78 286.8 49.2 258 88.8 243.6 128.4 243.6 168 243.6 207.6 258 247.2 286.8 286.8 247.2 258 207.6 243.6 168 243.6Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 336 336">
+              <path fill="#e6d65e" d="M168 226.8C128.4 226.8 88.8 246.8 49.2 286.8 89.2 247.2 109.2 207.6 109.2 168 109.2 128.4 89.2 88.8 49.2 49.2 88.8 89.2 128.4 109.2 168 109.2 207.6 109.2 247.2 89.2 286.8 49.2 246.8 88.8 226.8 128.4 226.8 168 226.8 207.6 246.8 247.2 286.8 286.8 247.2 246.8 207.6 226.8 168 226.8Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 336 336">
+              <path fill="#ffcf5f" d="M168 243.6C128.4 243.6 88.8 258 49.2 286.8 78 247.2 92.4 207.6 92.4 168 92.4 128.4 78 88.8 49.2 49.2 88.8 78 128.4 92.4 168 92.4 207.6 92.4 247.2 78 286.8 49.2 258 88.8 243.6 128.4 243.6 168 243.6 207.6 258 247.2 286.8 286.8 247.2 258 207.6 243.6 168 243.6Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <path fill="#e3d881" d="M168 218.4C128.4 218.4 88.8 241.2 49.2 286.8 94.8 247.2 117.6 207.6 117.6 168 117.6 128.4 94.8 88.8 49.2 49.2 88.8 94.8 128.4 117.6 168 117.6 207.6 117.6 247.2 94.8 286.8 49.2 241.2 88.8 218.4 128.4 218.4 168 218.4 207.6 241.2 247.2 286.8 286.8 247.2 241.2 207.6 218.4 168 218.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 0px; top: 0px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 1443px; top: 36px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 623px; top: 1px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 571px; top: 17px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 577px; top: 17px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 591px; top: 16px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 599px; top: 15px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 313px; top: 181px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 323px; top: 170px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <path fill="#e3d881" d="M168 218.4C128.4 218.4 88.8 241.2 49.2 286.8 94.8 247.2 117.6 207.6 117.6 168 117.6 128.4 94.8 88.8 49.2 49.2 88.8 94.8 128.4 117.6 168 117.6 207.6 117.6 247.2 94.8 286.8 49.2 241.2 88.8 218.4 128.4 218.4 168 218.4 207.6 241.2 247.2 286.8 286.8 247.2 241.2 207.6 218.4 168 218.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 384px; top: 123px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 480px; top: 72px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 336 336">
+              <path fill="#ffcf5f" d="M168 243.6C128.4 243.6 88.8 258 49.2 286.8 78 247.2 92.4 207.6 92.4 168 92.4 128.4 78 88.8 49.2 49.2 88.8 78 128.4 92.4 168 92.4 207.6 92.4 247.2 78 286.8 49.2 258 88.8 243.6 128.4 243.6 168 243.6 207.6 258 247.2 286.8 286.8 247.2 258 207.6 243.6 168 243.6Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 645px; top: 3px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 336 336">
+              <path fill="#ffed8a" d="M168 235.2C128.4 235.2 88.8 252.4 49.2 286.8 83.6 247.2 100.8 207.6 100.8 168 100.8 128.4 83.6 88.8 49.2 49.2 88.8 83.6 128.4 100.8 168 100.8 207.6 100.8 247.2 83.6 286.8 49.2 252.4 88.8 235.2 128.4 235.2 168 235.2 207.6 252.4 247.2 286.8 286.8 247.2 252.4 207.6 235.2 168 235.2Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 318px; top: 26px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 336 336">
+              <path fill="#ffed8a" d="M168 235.2C128.4 235.2 88.8 252.4 49.2 286.8 83.6 247.2 100.8 207.6 100.8 168 100.8 128.4 83.6 88.8 49.2 49.2 88.8 83.6 128.4 100.8 168 100.8 207.6 100.8 247.2 83.6 286.8 49.2 252.4 88.8 235.2 128.4 235.2 168 235.2 207.6 252.4 247.2 286.8 286.8 247.2 252.4 207.6 235.2 168 235.2Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 296px; top: 181px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <path fill="#e3d881" d="M168 218.4C128.4 218.4 88.8 241.2 49.2 286.8 94.8 247.2 117.6 207.6 117.6 168 117.6 128.4 94.8 88.8 49.2 49.2 88.8 94.8 128.4 117.6 168 117.6 207.6 117.6 247.2 94.8 286.8 49.2 241.2 88.8 218.4 128.4 218.4 168 218.4 207.6 241.2 247.2 286.8 286.8 247.2 241.2 207.6 218.4 168 218.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 266px; top: 323px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 244px; top: 383px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 246px; top: 386px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 336 336">
+              <path fill="#ffe940" d="M168 260.4C128.4 260.4 88.8 269.2 49.2 286.8 66.8 247.2 75.6 207.6 75.6 168 75.6 128.4 66.8 88.8 49.2 49.2 88.8 66.8 128.4 75.6 168 75.6 207.6 75.6 247.2 66.8 286.8 49.2 269.2 88.8 260.4 128.4 260.4 168 260.4 207.6 269.2 247.2 286.8 286.8 247.2 269.2 207.6 260.4 168 260.4Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 266px; top: 400px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 284px; top: 384px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 268 268">
+              <path fill="#f8ffc4" d="M134.3 241C102.7 241 71.2 236.9 39.7 228.6 31.4 197.1 27.3 165.5 27.3 134 27.3 102.5 31.4 70.9 39.7 39.4 71.2 31.1 102.7 27 134.3 27 165.8 27 197.3 31.1 228.8 39.4 237.1 70.9 241.3 102.5 241.3 134 241.3 165.5 237.1 197.1 228.8 228.6 197.3 236.9 165.8 241 134.3 241Z" transform="rotate(45 134.25 134)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 320px; top: 353px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 336 336">
+              <path fill="#e6d65e" d="M168 226.8C128.4 226.8 88.8 246.8 49.2 286.8 89.2 247.2 109.2 207.6 109.2 168 109.2 128.4 89.2 88.8 49.2 49.2 88.8 89.2 128.4 109.2 168 109.2 207.6 109.2 247.2 89.2 286.8 49.2 246.8 88.8 226.8 128.4 226.8 168 226.8 207.6 246.8 247.2 286.8 286.8 247.2 246.8 207.6 226.8 168 226.8Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 421px; top: 309px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 336 336">
+              <polygon fill="#bfb177" points="168 252 49.2 286.8 84 168 49.2 49.2 168 84 286.8 49.2 252 168 286.8 286.8" transform="rotate(45 168 168)"></polygon>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 581px; top: 257px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 336 336">
+              <path fill="#e6d65e" d="M168 226.8C128.4 226.8 88.8 246.8 49.2 286.8 89.2 247.2 109.2 207.6 109.2 168 109.2 128.4 89.2 88.8 49.2 49.2 88.8 89.2 128.4 109.2 168 109.2 207.6 109.2 247.2 89.2 286.8 49.2 246.8 88.8 226.8 128.4 226.8 168 226.8 207.6 246.8 247.2 286.8 286.8 247.2 246.8 207.6 226.8 168 226.8Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 791px; top: 198px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 336 336">
+              <path fill="#e6d65e" d="M168 226.8C128.4 226.8 88.8 246.8 49.2 286.8 89.2 247.2 109.2 207.6 109.2 168 109.2 128.4 89.2 88.8 49.2 49.2 88.8 89.2 128.4 109.2 168 109.2 207.6 109.2 247.2 89.2 286.8 49.2 246.8 88.8 226.8 128.4 226.8 168 226.8 207.6 246.8 247.2 286.8 286.8 247.2 246.8 207.6 226.8 168 226.8Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 978px; top: 154px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 239 240">
+              <path fill="#e6cb05" d="M119.5 191.7C91.3 191.7 63.2 196 35 204.5 43.5 176.3 47.8 148.2 47.8 120 47.8 91.8 43.5 63.7 35 35.5 63.2 44 91.3 48.3 119.5 48.3 147.7 48.3 175.8 44 204 35.5 195.5 63.7 191.2 91.8 191.2 120 191.2 148.2 195.5 176.3 204 204.5 175.8 196 147.7 191.7 119.5 191.7Z" transform="rotate(45 119.501 120)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 1276px; top: 88px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 336 336">
+              <path fill="#ffed8a" d="M168 235.2C128.4 235.2 88.8 252.4 49.2 286.8 83.6 247.2 100.8 207.6 100.8 168 100.8 128.4 83.6 88.8 49.2 49.2 88.8 83.6 128.4 100.8 168 100.8 207.6 100.8 247.2 83.6 286.8 49.2 252.4 88.8 235.2 128.4 235.2 168 235.2 207.6 252.4 247.2 286.8 286.8 247.2 252.4 207.6 235.2 168 235.2Z" transform="rotate(45 168 168)"></path>
+            </svg>
+        </div><div class="jso-cursor-trail-shape" style="position: absolute; left: 1428px; top: 50px; pointer-events: none; display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 142 142">
+              <circle cx="71" cy="71" r="71" fill="#dbbc74"></circle>
+            </svg>
+        </div></div>
+	
+
+</body></html>
